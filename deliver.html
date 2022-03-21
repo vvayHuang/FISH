@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./stylesheet/asset/logo/SVG/logo-icon.svg" type="icon" rel="shortcut icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&family=Oswald:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="stylesheet/css/all.css">
+    <title>運送 - FISH</title>
+</head>
+
+<body class="bg-primary">
+    <!-- 導覽列 -->
+    <nav class="navbar navbar-expand-lg bg-primary py-2 sticky-lg-top bg-opacity-75" style="backdrop-filter: blur(5px);">
+        <div class="container d-lg-block">
+            <!-- 漢堡選單 -->
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list text-secondary"></i>
+            </button>
+            <a class="navbar-brand me-0" href="home.html">
+                <img src="./stylesheet/asset/logo/SVG/logo.svg" width="75" class="d-lg-none" alt="">
+            </a>
+            <a href="cart.html" class="px-3 d-lg-none d-block">
+                <i class="bi bi-cart-fill text-secondary"></i>
+            </a>
+            <!-- 桌面版導覽列 -->
+            <div class="row align-items-center d-none d-lg-flex">
+                <div class="col-4 offset-4">
+                    <a href="index.html">
+                        <img src="./stylesheet/asset/logo/SVG/logo.svg" width="75" class="d-none d-lg-block m-auto"
+                            alt="">
+                    </a>
+                </div>
+                <div class="col-4">
+                    <ul class="navbar-nav align-items-center justify-content-end text-nowrap">
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" href="#">關於</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" href="shop.html">商店</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" href="login.html">登入</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" href="cart.html">
+                                <i class="bi bi-cart-fill"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 手機版導覽列 -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav align-items-center d-lg-none">
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="#">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="product.html">shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="login.html">log in</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- 內容 -->
+    <section class="py-4">
+        <div class="container">
+            <div class="flex-lg-row gy-3 justify-content-center row">
+                <!-- 左欄 -->
+                <div class="col-lg-6 text-primary-light gx-0">
+                    <div class="p-4 bg-primary-light bg-gradient bg-opacity-25">
+                        <div class="row align-items-center mb-3">
+                            <div class="col-6">
+                                <h2 class="mb-0 text-info">運送</h2>
+                            </div>
+                            <div class="col-6">
+                                <div class="process-bar w-100 d-flex justify-content-between">
+                                    <div class="process-circle active"></div>
+                                    <div class="process-circle"></div>
+                                    <div class="process-circle"></div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 電腦版表格 -->
+                        <form class="row g-3 d-lg-flex d-none">
+                            <div class="col-6 col-md-6">
+                                <label for="inputFirstname" class="form-label text-secondary">姓</label>
+                                <input type="text" class="form-control bg-primary-light text-white" id="inputFirstname">
+                            </div>
+                            <div class="col-6 col-md-6">
+                                <label for="inputName" class="form-label text-secondary">名</label>
+                                <input type="text" class="form-control bg-primary-light text-white" id="inputName">
+                            </div>
+                            <div class="col-12">
+                                <label for="inputTel" class="form-label text-secondary">電話</label>
+                                <input type="tel" class="form-control bg-primary-light text-white" id="inputTel"
+                                    placeholder="0912-345678">
+                            </div>
+                            <div class="col-6 col-md-6">
+                                <label for="inputCity" class="form-label text-secondary">地址</label>
+                                <select id="inputCity" class="form-select bg-primary-light ">
+                                    <option selected>請選擇</option>
+                                    <option>台北市</option>
+                                    <option>新北市</option>
+                                    <option>高譚市</option>
+                                    <option>顏市</option>
+                                </select>
+                            </div>
+                            <div class="col-6 col-md-6">
+                                <label for="inputDistrict" class="form-label text-secondary">行政區</label>
+                                <select id="inputDistrict" class="form-select bg-primary-light ">
+                                    <option selected>請選擇</option>
+                                    <option>一區</option>
+                                    <option>二區</option>
+                                    <option>三區</option>
+                                </select>
+                            </div>
+                            <div class="col-md-12">
+                                <input type="text" class="form-control bg-primary-light text-white" id="inputAddress">
+                            </div>
+                        </form>
+                        <!-- 手機版表格 -->
+                        <div class="row g-2 d-lg-none d-flex">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="floatingInputGrid"
+                                        placeholder="huang">
+                                    <label for="floatingInputGrid" class="text-primary">姓</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="floatingInputGrid"
+                                        placeholder="way">
+                                    <label for="floatingInputGrid" class="text-primary">名</label>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-floating">
+                                    <input type="tel" class="form-control" id="floatingInputGrid"
+                                        placeholder="0912-345678">
+                                    <label for="floatingInputGrid" class="text-primary">電話</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <select class="form-select" id="floatingSelectCity"
+                                        aria-label="Floating label select example">
+                                        <option selected>請選擇</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                    <label for="floatingSelectCity" class="text-primary">城市</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <select class="form-select" id="floatingSelectDicstrict"
+                                        aria-label="Floating label select example">
+                                        <option selected>請選擇</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                    <label for="floatingSelectDicstrict" class="text-primary">區域</label>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="floatingInputAddress"
+                                        placeholder="">
+                                    <label for="floatingInputAddress" class="text-primary">地址</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-secondary w-100 py-3 position-relative rounded-4">
+                        <a class=" text-decoration-none stretched-link text-success" href="payment.html">
+                            下一步
+                        </a>
+                    </button>
+                </div>
+                <!-- 右欄 -->
+                <div class="col-lg-4 d-none d-lg-block">
+                    <div class="row row-cols-1 row-cols-lg-1 g-4">
+                        <!-- 訂單摘要 -->
+                        <div class="col">
+                            <h3 class="bg-primary-light p-3 text-center mb-0 text-info fs-4">訂單摘要</h3>
+                            <div class="border p-3">
+                                <ul class="fs-4 fw-lighter justify-content-between list-unstyled row text-secondary">
+                                    <li class="col-auto">小計</li>
+                                    <li class="col-auto">NT$ 1,663</li>
+                                </ul>
+                                <ul class="fs-4 fw-lighter justify-content-between list-unstyled row text-secondary">
+                                    <li class="col-auto">運費</li>
+                                    <li class="col-auto">NT$ 300</li>
+                                </ul>
+                                <ul class="fs-3 fw-bold justify-content-between list-unstyled row mb-0 text-secondary">
+                                    <li class="col-auto">總計</li>
+                                    <li class="col-auto">NT$ 1,963</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- 購物清單 -->
+                        <div class="col">
+                            <h3 class="bg-primary-light p-3 text-center mb-0 text-info fs-4">購物清單</h3>
+                            <div class="border p-3">
+                                <ul
+                                    class="fs-4 list-unstyled justify-content-center row align-items-center gy-3 row-cols-1">
+                                    <li class="col d-flex align-items-center">
+                                        <div
+                                            style="background-image: url(https://images.unsplash.com/photo-1551225203-8acf4b6a1491?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=868&q=80); width: 120px; height: 80px; background-position: center; background-size: cover;">
+                                        </div>
+                                        <div class="fs-6 text-secondary ms-4">
+                                            <p class="mb-0 d-inline-block">恐怖的魚(2)</p>
+                                            <br>
+                                            <i class="fw-light">NT$ 132</i>
+                                        </div>
+                                    </li>
+                                    <li class="col d-flex align-items-center">
+                                        <div
+                                            style="background-image: url(https://images.unsplash.com/photo-1616479699729-8a4274c394ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=923&q=80); width: 120px; height: 80px; background-position: center; background-size: cover;">
+                                        </div>
+                                        <div class="fs-6 text-secondary ms-4">
+                                            <p class="mb-0 d-inline-block">非常恐怖的魚(2)</p>
+                                            <br>
+                                            <i class="fw-light">NT$ 1,332</i>
+                                        </div>
+                                    </li>
+                                    <li class="col d-flex align-items-center">
+                                        <div
+                                            style="background-image: url(https://images.unsplash.com/photo-1629274112406-0ad795f62726?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80); width: 120px; height: 80px; background-position: center; background-size: cover;">
+                                        </div>
+                                        <div class="fs-6 text-secondary ms-4">
+                                            <p class="mb-0 d-inline-block">虱目魚(1)</p>
+                                            <br>
+                                            <i class="fw-light">NT$ 100</i>
+                                        </div>
+                                    </li>
+                                    <li class="col d-flex align-items-center">
+                                        <div
+                                            style="background-image: url(https://images.unsplash.com/photo-1576628539568-cd607feeea14?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=874&q=80); width: 120px; height: 80px; background-position: center; background-size: cover;">
+                                        </div>
+                                        <div class="fs-6 text-secondary ms-4">
+                                            <p class="mb-0 d-inline-block">不是魚(1)</p>
+                                            <br>
+                                            <i class="fw-light">NT$ 999</i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 頁尾 -->
+    <footer class="py-4">
+        <div class="container mb-lg-5">
+            <div class="row justify-content-between align-items-center gy-3">
+                <div class="col-lg-auto text-info">
+                    <h4 class="fw-bold">DON'T MISS OUT</h4>
+                    <div class="mt-lg-auto mt-lg-5 mb-2">
+                        Sign up to receive updates on new music, show dates, special merch & more.
+                    </div>
+                    <div class="form-floating mb-3 d-flex w-75">
+                        <input type="email" class="form-control bg-success border-0   " id="floatingInput"
+                            placeholder="name@example.com">
+                        <label for="floatingInput" class="text-secondary">Email address</label>
+                        <button class="btn btn-outline-success w-50" type="button" id="button-addon2">
+                            <i class="bi bi-forward"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <ul
+                        class="g-2 justify-content-evenly justify-content-between list-unstyled mb-0 row row-cols-auto flex-lg-nowrap">
+                        <li class="col"><a href="#"><i class="bi bi-facebook fs-5 text-info"></i></a></li>
+                        <li class="col"><a href="#"><i class="bi bi-instagram fs-5 text-info"></i></a></li>
+                        <li class="col"><a href="#"><i class="bi bi-twitter fs-5 text-info"></i></a></li>
+                        <li class="col"><a href="#"><i class="bi bi-youtube fs-5 text-info"></i></a></li>
+                        <li class="col"><a href="#"><i class="bi bi-twitch fs-5 text-info"></i></a></li>
+                        <li class="col"><a href="#"><i class="bi bi-discord fs-5 text-info"></i></a></li>
+                        <li class="col"><a href="#"><i class="bi bi-slack fs-5 text-info"></i></a></li>
+                        <li class="col"><a href="#"><i class="bi bi-github fs-5 text-info"></i></a></li>
+                        <li class="col"><a href="#"><i class="bi bi-playstation fs-5 text-info"></i></a></li>
+                        <li class="col"><a href="#"><i class="bi bi-xbox fs-5 text-info"></i></a></li>
+                        <li class="col"><a href="#"><i class="bi bi-envelope-fill fs-5 text-info"></i></a></li>
+                    </ul>
+                    <p class="mt-lg-2 text-info text-center text-lg-start">
+                        0912-345678 <br>
+                        Copyright © 2022 FISH <br>
+                        Site by way <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
