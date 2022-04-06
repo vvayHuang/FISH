@@ -1,0 +1,9 @@
+.hero-bg-cover{
+    height: 634px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media (min-width:576px) {
+        height: 810px;
+    }
+}

@@ -1,0 +1,17 @@
+.banner-color-bg{
+    display: block;
+    height: 75px;
+}
+.banner-title{
+    color: $info;
+    background-color: $primary;
+    transition: ease .5s;
+    backdrop-filter: blur(5px);
+    opacity: .8;
+    &:hover{
+        backdrop-filter: blur(10px);
+        color: $secondary;
+        background-color: rgba($color: $primary, $alpha: .4);
+        transform: scale(1.1);
+    }
+}

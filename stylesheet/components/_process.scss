@@ -1,0 +1,58 @@
+.process-bar{
+    position: relative;
+    &::after{
+        content: "";
+        display: block;
+        height: 1px;
+        background-color: $primary-light;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+    }
+}
+.process-circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid $primary-light;
+    background-color: $primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.process-circle.active{
+    &::after{
+        content: "";
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: $primary-light;
+        display: block;
+    }
+}
+.process-bar-success{
+    position: relative;
+    &::after{
+        content: "";
+        display: block;
+        height: 1px;
+        background-color: $primary;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+    }
+}
+.process-circle-success{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid $primary;
+    background-color: $primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}

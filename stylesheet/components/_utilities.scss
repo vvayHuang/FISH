@@ -1,3 +1,18 @@
 .bg-primary-light{
     background-color: $primary-light;
 }
+.btn-primary-light{
+    @include button-variant($primary-light, $primary-light)
+}
+.object-fit-cover{
+    object-fit: cover;
+}
+.min-height{
+    min-height: calc( 100vh - 56px);
+}
+.link-no-underline{
+    text-decoration: none;
+    ::hover{
+        text-decoration: underline;
+    }
+}
