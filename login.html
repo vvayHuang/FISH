@@ -15,102 +15,44 @@
     <title>登入 - FISH</title>
 </head>
 
-<body class="bg-primary">
+<body>
     <!-- 導覽列 -->
-    <nav class="navbar navbar-expand-lg bg-primary py-2 bg-opacity-75" style="backdrop-filter: blur(5px);">
-        <div class="container d-lg-block">
-            <!-- 漢堡選單 -->
-            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="bi bi-list text-secondary"></i>
-            </button>
-            <a class="navbar-brand me-0" href="index.html">
-                <img src="./stylesheet/asset/logo/SVG/logo.svg" width="75" class="d-lg-none" alt="">
-            </a>
-            <a href="cart.html" class="px-3 d-lg-none d-block">
-                <i class="bi bi-cart-fill text-secondary"></i>
-            </a>
-            <!-- 桌面版導覽列 -->
-            <div class="row align-items-center d-none d-lg-flex">
-                <div class="col-4 offset-4">
-                    <a href="index.html">
-                        <img src="./stylesheet/asset/logo/SVG/logo.svg" width="75" class="d-none d-lg-block m-auto"
-                            alt="">
-                    </a>
-                </div>
-                <div class="col-4">
-                    <ul class="navbar-nav align-items-center justify-content-end text-nowrap">
-                        <li class="nav-item">
-                            <a class="nav-link mx-3" href="#">關於</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-3" href="shop.html">商店</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-3" href="login.html">登入</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-3" href="cart.html">
-                                <i class="bi bi-cart-fill"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!-- 手機版導覽列 -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav align-items-center d-lg-none">
-                    <li class="nav-item">
-                        <a class="nav-link mx-3" href="#">關於</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-3" href="shop.html".html">商店</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-3" href="login.html">登入</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    
     <!-- 內容 -->
-    <section class="py-lg-6 bg-cover bg-attachment-fixed" style="background-image: url(https://images.unsplash.com/photo-1567654737015-c30453296bd0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);">
+    <section class="pb-lg-6 pt-lg-4 bg-cover bg-attachment-fixed"
+        style="background-image: url(https://images.unsplash.com/photo-1630771076738-1f43a072f921?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);">
+        <a href="index.html" class="ms-2 ms-lg-5 d-lg-block d-none"><img src="stylesheet/asset/logo/SVG/logo.svg" height="45" alt="fish-logo-svg"></a>
         <div class="container">
             <div class="row g-lg-0 justify-content-center">
                 <!-- 會員登入 -->
-                <div class="col-lg-5 bg-primary-light bg-gradient bg-opacity-75">
-                    <h2 class="fs-1 py-4 text-info text-center mt-lg-6 mb-0">會員登入</h2>
-                    <form class="row px-lg-5 gy-4 mb-6">
-                        <div class="form-floating text-primary">
-                            <input type="email" class="form-control bg-primary-light text-white shadow-none border-0" id="floatingInput"
-                                placeholder="name@example.com">
+                <div class="col-lg-5 bg-primary-light bg-gradient bg-opacity-75 p-lg-6 p-4">
+                    <a href="index.html" class="d-lg-none d-block"><img src="stylesheet/asset/logo/SVG/logo.svg" height="45" alt="fish-logo-svg"></a>
+                    <h2 class="fs-1 py-4 mb-0">會員登入</h2>
+                    <form class="row gy-4">
+                        <div class="form-floating">
+                            <input type="email" class="form-control bg-primary-light text-white shadow-none border-0"
+                                id="floatingInput" placeholder="name@example.com">
                             <label for="floatingInput" style="left: 12px;">電子信箱或手機號碼
                             </label>
                         </div>
-                        <div class="form-floating text-primary">
-                            <input type="password" class="form-control bg-primary-light text-white shadow-none border-0" id="floatingPassword"
-                                placeholder="Password">
+                        <div class="form-floating">
+                            <input type="password" class="form-control bg-primary-light text-white shadow-none border-0"
+                                id="floatingPassword" placeholder="Password">
                             <label for="floatingPassword" style="left: 12px;">密碼</label>
                         </div>
-                        <div class="input-group input-group-lg text-white justify-content-between">
+                        <button type="submit"
+                            class="btn btn-secondary mb-4 mb-lg-0 rounded-4 text-warning mt-5">登入</button>
+                        <div class="input-group input-group-lg text-white justify-content-between mt-2">
                             <div>
                                 <input class="form-check-input rounded-0" type="checkbox" value=""
                                     id="flexCheckDefault">
-                                <label class="form-check-label text-info" for="flexCheckDefault">記住我
+                                <label class="form-check-label text-secondary" for="flexCheckDefault">記住我
                                 </label>
                             </div>
-                            <a href="#" class="text-info link-no-underline">需要協助嗎？</a>
+                            <a href="#" class="link-underline">需要協助嗎？</a>
                         </div>
-                        <div class="position-relative">
-                            <div class="progress bg-info" style="height: 1px">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
-                                    aria-valuemax="100"></div>
-                            </div>
-                            <span
-                                class="fs-6 text-info fw-lighter position-absolute start-50 translate-middle bg-primary-light bg-gradient px-3 text-nowrap">
-                                <i>我想快點登入</i></span>
-                        </div>
-                        <div class="row row-cols-3 g-3">
+                        <h3 class="fs-5 mt-6">用社群帳號登入</h3>
+                        <div class="row row-cols-3 g-3 mt-0">
                             <div class="col fs-6 text-center position-relative">
                                 <i class="bi bi-facebook text-secondary"></i>
                                 <a href="#" class="text-decoration-none stretched-link">
@@ -124,57 +66,69 @@
                                 </a>
                             </div>
                             <div class="col fs-6 text-center position-relative">
-                                <i class="bi bi-github text-secondary"></i>
+                                <i class="bi bi-twitter text-secondary"></i>
                                 <a href="#" class="text-decoration-none stretched-link">
-                                    github
+                                    twitter
                                 </a>
                             </div>
                         </div>
+                        <div>
+                            尚未加入會員？<a href="#" class="link-underline">馬上註冊。</a>
+                        </div>
+                        <div style="font-size: 13px;">
+                            此頁面受到 Google reCAPTCHA 保護，以確認您不是機器人。 <a href="#" class="link-underline">進一步了解。</a>
+                        </div>
                     </form>
-                    <button type="submit" class="btn btn-secondary text-success fs-4 fw-bold py-4 w-100 mb-4 mb-lg-0 rounded-4">登入帳號</button>
                 </div>
             </div>
         </div>
     </section>
     <!-- 頁尾 -->
-    <footer class="py-4">
-        <div class="container mb-lg-5">
-            <div class="row justify-content-between align-items-center gy-3">
-                <div class="col-lg-auto text-info">
-                    <h4 class="fw-bold">DON'T MISS OUT</h4>
-                    <div class="mt-lg-auto mt-lg-5 mb-2">
-                        Sign up to receive updates on new music, show dates, special merch & more.
-                    </div>
-                    <div class="form-floating mb-3 d-flex w-75">
-                        <input type="email" class="form-control bg-success border-0   " id="floatingInput"
-                            placeholder="name@example.com">
-                        <label for="floatingInput" class="text-secondary">Email address</label>
-                        <button class="btn btn-outline-success w-50" type="button" id="button-addon2">
-                            <i class="bi bi-forward"></i>
+    <footer class="py-4" style="background: linear-gradient(#3a0ca3,#300660);">
+        <div class="container border-top py-4 py-lg-0">
+            <div class="row justify-content-between align-items-center gy-3 mt-lg-2">
+                <div class="col-lg-5">
+                    <h4 class="fw-bold">馬上訂閱</h4>
+                    <p class="mt-lg-auto mt-lg-5 mb-2">
+                        訂閱電子報，限時限量優惠不錯過
+                    </p>
+                    <div class="form-floating mb-3 d-flex">
+                        <input type="email" class="bg-secondary border-0 form-control text-primary   "
+                            id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput" class="text-primary">Email address</label>
+                        <button class="btn bg-secondary w-25" type="button" id="button-addon2">
+                            <i class="bi bi-forward text-primary"></i>
                         </button>
                     </div>
+                    <div style="font-size: 12px;">
+                        更多選購方式：尋找<a href="#" class="link-underline">當地的直營店</a>或<a href="#"
+                            class="link-underline">其他零售商</a>，或致電
+                        0800-000-000。
+                    </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-3 mb-4 mb-lg-0">
+                    <div class="d-flex flex-column align-items-center align-items-lg-end">
+                        <img class="ms-lg-auto mb-4" src="stylesheet/asset/logo/SVG/logo.svg" width="80" alt="FISH">
+                        <p class="text-lg-end text-center mb-0">
+                            電話：<a href="tel:02-18703030" class="link-underline">02-18703030</a>
+                            <br>
+                            信箱：<a href="mailto:123@gmail.com" class="link-underline">md46343113@msn.com
+                            </a>
+                        </p>
+                    </div>
                     <ul
-                        class="g-2 justify-content-evenly justify-content-between list-unstyled mb-0 row row-cols-auto flex-lg-nowrap">
-                        <li class="col"><a href="#"><i class="bi bi-facebook fs-5 text-info"></i></a></li>
-                        <li class="col"><a href="#"><i class="bi bi-instagram fs-5 text-info"></i></a></li>
-                        <li class="col"><a href="#"><i class="bi bi-twitter fs-5 text-info"></i></a></li>
-                        <li class="col"><a href="#"><i class="bi bi-youtube fs-5 text-info"></i></a></li>
-                        <li class="col"><a href="#"><i class="bi bi-twitch fs-5 text-info"></i></a></li>
-                        <li class="col"><a href="#"><i class="bi bi-discord fs-5 text-info"></i></a></li>
-                        <li class="col"><a href="#"><i class="bi bi-slack fs-5 text-info"></i></a></li>
-                        <li class="col"><a href="#"><i class="bi bi-github fs-5 text-info"></i></a></li>
-                        <li class="col"><a href="#"><i class="bi bi-playstation fs-5 text-info"></i></a></li>
-                        <li class="col"><a href="#"><i class="bi bi-xbox fs-5 text-info"></i></a></li>
-                        <li class="col"><a href="#"><i class="bi bi-envelope-fill fs-5 text-info"></i></a></li>
+                        class="g-2 justify-content-lg-end justify-content-center list-unstyled mb-0 row row-cols-auto flex-lg-nowrap">
+                        <li class="col"><a href="#"><i class="bi bi-facebook"></i></a></li>
+                        <li class="col"><a href="#"><i class="bi bi-instagram"></i></a></li>
+                        <li class="col"><a href="#"><i class="bi bi-twitter"></i></a></li>
+                        <li class="col"><a href="#"><i class="bi bi-youtube"></i></a></li>
                     </ul>
-                    <p class="mt-lg-2 text-info text-center text-lg-start">
-                        0912-345678 <br>
-                        Copyright © 2022 FISH <br>
-                        Site by way <br>
-                    </p>
                 </div>
+            </div>
+            <div class="row mt-lg-2 border-top pt-2 justify-content-between">
+                <div class="col-auto">Copyright © 2022 FISH Site by <a href="https://github.com/vvayHuang"
+                        class="link-underline">wayHuang</a></div>
+                <div class="col-auto">台灣</div>
             </div>
         </div>
     </footer>

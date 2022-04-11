@@ -1,9 +1,22 @@
-.hero-bg-cover{
-    height: 634px;
-    background-position: center center;
-    background-size: cover;
+.hero-bg-cover-1{
+    height: 490px;
+    background-position: center 80%;
+    background-size: 80%;
     background-repeat: no-repeat;
     @media (min-width:576px) {
         height: 810px;
+        background-position: center center;
+        background-size: contain;
+    }
+}
+.hero-bg-cover-2{
+    height: 490px;
+    background-position: center 80%;
+    background-size: 115%;
+    background-repeat: no-repeat;
+    @media (min-width:576px) {
+        height: 810px;
+        background-position: center 155%;
+        background-size: 95%;
     }
 }

@@ -17,22 +17,24 @@
 
 <body class="bg-primary">
     <!-- 導覽列 -->
-    <nav class="navbar navbar-expand-lg bg-primary py-2 sticky-lg-top bg-opacity-75" style="backdrop-filter: blur(5px);">
+    <nav class="navbar navbar-expand-lg bg-primary py-2 sticky-lg-top bg-opacity-75"
+        style="backdrop-filter: blur(5px);">
         <div class="container d-lg-block">
             <!-- 漢堡選單 -->
-            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <i class="bi bi-list text-secondary"></i>
             </button>
-            <a class="navbar-brand me-0" href="index.html".html">
+            <a class="navbar-brand me-0" href="index.html">
                 <img src="./stylesheet/asset/logo/SVG/logo.svg" width="75" class="d-lg-none" alt="">
             </a>
             <a href="cart.html" class="px-3 d-lg-none d-block">
                 <i class="bi bi-cart-fill text-secondary"></i>
             </a>
             <!-- 桌面版導覽列 -->
-            <div class="row align-items-center d-none d-lg-flex">
-                <div class="col-4 offset-4">
+            <div class="row align-items-center d-none d-lg-flex justify-content-between">
+                <div class="col-auto">
                     <a href="index.html">
                         <img src="./stylesheet/asset/logo/SVG/logo.svg" width="75" class="d-none d-lg-block m-auto"
                             alt="">
@@ -41,7 +43,7 @@
                 <div class="col-4">
                     <ul class="navbar-nav align-items-center justify-content-end text-nowrap">
                         <li class="nav-item">
-                            <a class="nav-link mx-3" href="index.html">關於</a>
+                            <a class="nav-link mx-3" href="#">關於</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link mx-3" href="shop.html">商店</a>
@@ -64,7 +66,7 @@
                         <a class="nav-link mx-3" href="#">關於</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-3" href="product.html">商店</a>
+                        <a class="nav-link mx-3" href="shop.html">商店</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link mx-3" href="login.html">登入</a>
@@ -74,34 +76,37 @@
         </div>
     </nav>
     <!-- 封面 -->
-    <header class="container">
+    <header class="container px-0 px-lg-2">
         <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="10000">
+                <div class="carousel-item active" data-bs-interval="5000">
                     <div class="bg-cover"
-                        style="background-image: url(https://images.unsplash.com/photo-1595541718888-f29d5deaeb6e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);height: calc(100vh - 181px);">
+                        style="background-image:linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url(https://images.unsplash.com/photo-1609414223995-31d2a68748ee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80); height: 296px;">
                     </div>
-                    <div class="carousel-caption d-md-block text-info">
-                        <h5>First slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
+                    <div class="carousel-caption text-secondary text-start">
+                        <span class="fs-6">孔雀魚</span>
+                        <h5 class="fw-bold fs-4">就。很。孔</h5>
+                        <p>松嶺青色新登場。NT$ 100起</p>
                     </div>
                 </div>
-                <div class="carousel-item" data-bs-interval="10000">
+                <div class="carousel-item" data-bs-interval="5000">
                     <div class="bg-cover"
-                        style="background-image: url(https://images.unsplash.com/photo-1436891461396-6df41158de09?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80);height: calc(100vh - 181px);">
+                        style="background-image:linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url(https://images.unsplash.com/photo-1436891461396-6df41158de09?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80); height: 296px;">
                     </div>
-                    <div class="carousel-caption d-md-block text-info">
-                        <h5>Second slide label</h5>
-                        <p>Some representative placeholder content for the second slide.</p>
+                    <div class="carousel-caption text-secondary text-start">
+                        <span class="fs-6">美人魚</span>
+                        <h5 class="fw-bold fs-4">新色入手，心花怒放</h5>
+                        <p>選購最新魚種</p>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-bs-interval="5000">
                     <div class="bg-cover"
-                        style="background-image: url(https://images.unsplash.com/photo-1607328726806-98a9291cde45?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80);height: calc(100vh - 181px);">
+                        style="background-image:linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url(https://images.unsplash.com/photo-1607328726806-98a9291cde45?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80); height: 296px;">
                     </div>
-                    <div class="carousel-caption d-md-block text-info">
-                        <h5>Third slide label</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
+                    <div class="carousel-caption text-secondary text-start">
+                        <span class="fs-6">熱帶魚</span>
+                        <h5 class="fw-bold fs-4">生命很可以。<br>價格很可以。</h5>
+                        <p>新登場。NT$ 99起</p>
                     </div>
                 </div>
             </div>
@@ -118,23 +123,15 @@
         </div>
     </header>
     <section class="container">
-        <div class="row row-cols-1 row-cols-lg-5 g-lg-3 mt-2 mb-5">
-            <div class="col">
+        <div class="row row-cols-1 g-lg-3 mt-2 mb-5">
+            <div class="col-lg-4">
                 <a href="#" class="banner-color-bg text-decoration-none bg-cover"
                     style="background-image: url(https://images.unsplash.com/photo-1567628065080-ecdec09a7588?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=760&q=80);">
                     <h3 class="banner-title w-100 h-100 d-flex justify-content-center align-items-center fs-5">新鮮貨
                     </h3>
                 </a>
             </div>
-            <div class="col">
-                <a href="#" class="banner-color-bg text-decoration-none bg-cover"
-                    style="background-image: url(https://images.unsplash.com/photo-1565062044382-95c12c17f062?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);">
-                    <h3 class="banner-title w-100 h-100 d-flex justify-content-center align-items-center fs-5">
-                        本日精選
-                    </h3>
-                </a>
-            </div>
-            <div class="col">
+            <div class="col-lg-4">
                 <a href="#" class="banner-color-bg text-decoration-none bg-cover"
                     style="background-image: url(https://images.unsplash.com/photo-1510018572596-e40e2619b412?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);">
                     <h3 class="banner-title w-100 h-100 d-flex justify-content-center align-items-center fs-5">
@@ -142,14 +139,7 @@
                     </h3>
                 </a>
             </div>
-            <div class="col">
-                <a href="#" class="banner-color-bg text-decoration-none bg-cover"
-                    style="background-image: url(https://images.unsplash.com/photo-1603817124981-11f3557c6758?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);">
-                    <h3 class="banner-title w-100 h-100 d-flex justify-content-center align-items-center fs-5">網友推薦
-                    </h3>
-                </a>
-            </div>
-            <div class="col">
+            <div class="col-lg-4">
                 <a href="#" class="banner-color-bg text-decoration-none bg-cover"
                     style="background-image: url(https://images.unsplash.com/photo-1605876168868-6d7aa0e9109a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);">
                     <h3 class="banner-title w-100 h-100 d-flex justify-content-center align-items-center fs-5">親友推薦
@@ -158,38 +148,25 @@
             </div>
         </div>
     </section>
-    <!-- 清單及卡片群組 -->
+    <!--卡片群組 -->
     <section class="mt-lg-5 mt-0">
         <div class="container">
             <div class="row gy-3 justify-content-evenly">
-                <!-- 清單 -->
-                <div class="col-lg-3 text-center sticky-lg-top d-none d-lg-block">
-                    <div class="sticky-lg-top" style="top: 4.5rem;">
-                        <h4 class="bg-primary-light text-info mb-0 py-3 fs-5">有什麼東東</h4>
-                        <div class="list-group fs-6 fw-bold">
-                            <a href="#" class="list-group-item list-group-item-action" aria-current="true">
-                                所有的魚（9_9）
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">今日我最美（>_o）</a>
-                            <a href="#" class="list-group-item list-group-item-action">你好夯（3_3）</a>
-                            <a href="#" class="list-group-item list-group-item-action">新兵駕到（= =）</a>
-                        </div>
-                    </div>
-                </div>
                 <!-- 卡片群組 -->
-                <div class="col-lg-9">
+                <div class="col">
                     <div class="row row-cols-1 row-cols-lg-3 g-4">
                         <div class="col">
                             <div class="card border-0 h-100 position-relative">
                                 <div class="card-tag position-absolute">本日精選</div>
                                 <i class="bi bi-suit-heart position-absolute " style="top: 10px; right: 20px;"></i>
                                 <img src="https://images.unsplash.com/photo-1571752726703-5e7d1f6a986d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=865&q=80"
-                                    class="card-img-top object-fit-cover" alt="...">
-                                <div class="d-flex justify-content-evenly p-2 fs-6">
-                                    <h5 class="fw-light mb-0">小綠</h5>
-                                    <p class="mb-0">NT$ 1,450</p>
-                                </div>
-                                <a href="#" class="btn btn-primary-light fw-bold fs-6">加入購物車</a>
+                                    class="card-img-top object-fit-cover" alt="小綠">
+                                <a href="fish-green.html" class="stretched-link">
+                                    <div class="card-img-overlay" style="top: auto;">
+                                        <h5 class="fs-4">小綠</h5>
+                                        <span>NT$ 1,450</span>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                         <div class="col">
@@ -197,12 +174,13 @@
                                 <div class="card-tag position-absolute">本日精選</div>
                                 <i class="bi bi-suit-heart position-absolute " style="top: 10px; right: 20px;"></i>
                                 <img src="https://images.unsplash.com/photo-1524704654690-b56c05c78a00?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8ZmlzaHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-                                    class="card-img-top object-fit-cover h-100" alt="...">
-                                <div class="d-flex justify-content-evenly p-2 fs-6">
-                                    <h5 class="fw-light mb-0">小紫</h5>
-                                    <p class="mb-0">NT$ 770</p>
-                                </div>
-                                <a href="#" class="btn btn-primary-light fw-bold fs-6">加入購物車</a>
+                                    class="card-img-top object-fit-cover h-100" alt="小粉紅">
+                                <a href="#" class="stretched-link">
+                                    <div class="card-img-overlay" style="top: auto;">
+                                        <h5 class="fs-4">小粉紅</h5>
+                                        <span>NT$ 450</span>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                         <div class="col">
@@ -210,84 +188,91 @@
                                 <div class="card-tag position-absolute">本日精選</div>
                                 <i class="bi bi-suit-heart position-absolute " style="top: 10px; right: 20px;"></i>
                                 <img src="https://images.unsplash.com/photo-1524704796725-9fc3044a58b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=905&q=80"
-                                    class="card-img-top object-fit-cover h-100" alt="...">
-                                <div class="d-flex justify-content-evenly p-2 fs-6">
-                                    <h5 class="fw-light mb-0">小馬</h5>
-                                    <p class="mb-0">NT$ 50</p>
-                                </div>
-                                <a href="#" class="btn btn-primary-light fw-bold fs-6">加入購物車</a>
+                                    class="card-img-top object-fit-cover h-100" alt="馬哥">
+                                <a href="#" class="stretched-link">
+                                    <div class="card-img-overlay" style="top: auto;">
+                                        <h5 class="fs-4">馬哥</h5>
+                                        <span>NT$ 150</span>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                         <div class="col">
                             <div class="card border-0 h-100 position-relative">
                                 <i class="bi bi-suit-heart position-absolute " style="top: 10px; right: 20px;"></i>
                                 <img src="https://images.unsplash.com/photo-1576082197549-9f592808b2e1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-                                    class="card-img-top object-fit-cover h-100" alt="...">
-                                <div class="d-flex justify-content-evenly p-2 fs-6">
-                                    <h5 class="fw-light mb-0">塔綠斑</h5>
-                                    <p class="mb-0">NT$ 50</p>
-                                </div>
-                                <a href="#" class="btn btn-primary-light fw-bold fs-6">加入購物車</a>
+                                    class="card-img-top object-fit-cover h-100" alt="印度吳郭魚">
+                                    <a href="#" class="stretched-link">
+                                        <div class="card-img-overlay" style="top: auto;">
+                                            <h5 class="fs-4">印度吳郭魚</h5>
+                                            <span>NT$ 1500</span>
+                                        </div>
+                                    </a>
                             </div>
                         </div>
                         <div class="col">
                             <div class="card border-0 h-100 position-relative">
                                 <i class="bi bi-suit-heart position-absolute " style="top: 10px; right: 20px;"></i>
                                 <img src="https://images.unsplash.com/photo-1520990056956-5d29b4884100?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=833&q=80"
-                                    class="card-img-top object-fit-cover h-100" alt="...">
-                                <div class="d-flex justify-content-evenly p-2 fs-6">
-                                    <h5 class="fw-light mb-0">不知道是誰</h5>
-                                    <p class="mb-0">NT$ 50</p>
-                                </div>
-                                <a href="#" class="btn btn-primary-light fw-bold fs-6">加入購物車</a>
+                                    class="card-img-top object-fit-cover h-100" alt="澳洲魚">
+                                    <a href="#" class="stretched-link">
+                                        <div class="card-img-overlay" style="top: auto;">
+                                            <h5 class="fs-4">澳洲魚</h5>
+                                            <span>NT$ 1500</span>
+                                        </div>
+                                    </a>
                             </div>
                         </div>
                         <div class="col">
                             <div class="card border-0 h-100 position-relative">
                                 <i class="bi bi-suit-heart position-absolute " style="top: 10px; right: 20px;"></i>
                                 <img src="https://images.unsplash.com/photo-1540759893615-cb37a9f6027a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-                                    class="card-img-top object-fit-cover h-100" alt="...">
-                                <div class="d-flex justify-content-evenly p-2 fs-6">
-                                    <h5 class="fw-light mb-0">小紅</h5>
-                                    <p class="mb-0">NT$ 50</p>
-                                </div>
-                                <a href="#" class="btn btn-primary-light fw-bold fs-6">加入購物車</a>
+                                    class="card-img-top object-fit-cover h-100" alt="俄羅斯紅仔">
+                                    <a href="#" class="stretched-link">
+                                        <div class="card-img-overlay" style="top: auto;">
+                                            <h5 class="fs-4">俄羅斯紅仔</h5>
+                                            <span>NT$ 200</span>
+                                        </div>
+                                    </a>
                             </div>
                         </div>
                         <div class="col">
                             <div class="card border-0 h-100 position-relative">
                                 <i class="bi bi-suit-heart position-absolute " style="top: 10px; right: 20px;"></i>
                                 <img src="https://images.unsplash.com/photo-1517168339184-6c818c811609?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
-                                    class="card-img-top object-fit-cover h-100" alt="...">
-                                <div class="d-flex justify-content-evenly p-2 fs-6">
-                                    <h5 class="fw-light mb-0">小丑</h5>
-                                    <p class="mb-0">NT$ QQ</p>
-                                </div>
-                                <a href="#" class="btn btn-primary-light fw-bold fs-6">加入購物車</a>
+                                    class="card-img-top object-fit-cover h-100" alt="小丑魚">
+                                    <a href="#" class="stretched-link">
+                                        <div class="card-img-overlay" style="top: auto;">
+                                            <h5 class="fs-4">小丑魚</h5>
+                                            <span>NT$ 30</span>
+                                        </div>
+                                    </a>
                             </div>
                         </div>
                         <div class="col">
                             <div class="card border-0 h-100 position-relative">
                                 <i class="bi bi-suit-heart position-absolute " style="top: 10px; right: 20px;"></i>
                                 <img src="https://images.unsplash.com/photo-1468112014733-deb9e1f8ddd2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
-                                    class="card-img-top object-fit-cover h-100" alt="...">
-                                <div class="d-flex justify-content-evenly p-2 fs-6">
-                                    <h5 class="fw-light mb-0">小美</h5>
-                                    <p class="mb-0">NT$ 69</p>
-                                </div>
-                                <a href="#" class="btn btn-primary-light fw-bold fs-6">加入購物車</a>
+                                    class="card-img-top object-fit-cover h-100" alt="小美">
+                                    <a href="#" class="stretched-link">
+                                        <div class="card-img-overlay" style="top: auto;">
+                                            <h5 class="fs-4">小美</h5>
+                                            <span>NT$ 69</span>
+                                        </div>
+                                    </a>
                             </div>
                         </div>
                         <div class="col">
                             <div class="card border-0 h-100 position-relative">
                                 <i class="bi bi-suit-heart position-absolute " style="top: 10px; right: 20px;"></i>
-                                <img src="data:image/jpeg;base64,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"
-                                    class="card-img-top object-fit-cover h-100" alt="...">
-                                <div class="d-flex justify-content-evenly p-2 fs-6">
-                                    <h5 class="fw-light mb-0">小美人魚</h5>
-                                    <p class="mb-0">NT$ 69</p>
-                                </div>
-                                <a href="#" class="btn btn-primary-light fw-bold fs-6">加入購物車</a>
+                                <img src="https://images.unsplash.com/photo-1517626617871-43d494b91264?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                                    class="card-img-top object-fit-cover h-100" alt="小美人魚">
+                                    <a href="#" class="stretched-link">
+                                        <div class="card-img-overlay" style="top: auto;">
+                                            <h5 class="fs-4">小美人魚</h5>
+                                            <span>NT$ 9</span>
+                                        </div>
+                                    </a>
                             </div>
                         </div>
                     </div>
@@ -295,15 +280,17 @@
                     <nav aria-label="Page navigation example" class="mt-4">
                         <ul class="pagination justify-content-center">
                             <li class="page-item">
-                                <a class="page-link" href="#" aria-label="Previous">
+                                <a class="page-link bg-transparent border-0" href="#" aria-label="Previous">
                                     <i class="bi bi-caret-left-fill"></i>
                                 </a>
                             </li>
-                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link bg-transparent border-0" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link bg-transparent border-0" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link bg-transparent border-0" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link bg-transparent border-0" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link bg-transparent border-0" href="#">5</a></li>
                             <li class="page-item">
-                                <a class="page-link" href="#" aria-label="Next">
+                                <a class="page-link bg-transparent border-0" href="#" aria-label="Next">
                                     <i class="bi bi-caret-right-fill"></i>
                                 </a>
                             </li>
@@ -311,47 +298,61 @@
                     </nav>
                 </div>
             </div>
+            <div style="font-size: 12px;">
+                <p>購買須知：
+                <p>1. 價格皆含運送費用。</p>
+                <p>2. 優惠價格適用於符合資格的顧客。如須進一步了解如何獲享優惠價資格，請洽詢店內專員，或致電與我們聯繫。</p>
+                <p>†† 我們會透過你的網際網路 IP 位址所對應的地理區域，或你上次瀏覽網站輸入的位置資訊，估計你的約略位置。</p>
+                </p>
+            </div>
         </div>
     </section>
     <!-- 頁尾 -->
-    <footer class="py-4">
-        <div class="container mb-lg-5">
-            <div class="row justify-content-between align-items-center gy-3">
-                <div class="col-lg-auto text-info">
-                    <h4 class="fw-bold">DON'T MISS OUT</h4>
-                    <div class="mt-lg-auto mt-lg-5 mb-2">
-                        Sign up to receive updates on new music, show dates, special merch & more.
-                    </div>
-                    <div class="form-floating mb-3 d-flex w-75">
-                        <input type="email" class="form-control bg-success border-0   " id="floatingInput"
-                            placeholder="name@example.com">
-                        <label for="floatingInput" class="text-secondary">Email address</label>
-                        <button class="btn btn-outline-success w-50" type="button" id="button-addon2">
-                            <i class="bi bi-forward"></i>
+    <footer class="py-4" style="background: linear-gradient(#3a0ca3,#300660);">
+        <div class="container border-top py-4 py-lg-0">
+            <div class="row justify-content-between align-items-center gy-3 mt-lg-2">
+                <div class="col-lg-5">
+                    <h4 class="fw-bold">馬上訂閱</h4>
+                    <p class="mt-lg-auto mt-lg-5 mb-2">
+                        訂閱電子報，限時限量優惠不錯過
+                    </p>
+                    <div class="form-floating mb-3 d-flex">
+                        <input type="email" class="bg-secondary border-0 form-control text-primary   "
+                            id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput" class="text-primary">Email address</label>
+                        <button class="btn bg-secondary w-25" type="button" id="button-addon2">
+                            <i class="bi bi-forward text-primary"></i>
                         </button>
                     </div>
+                    <div style="font-size: 12px;">
+                        更多選購方式：尋找<a href="#" class="link-underline">當地的直營店</a>或<a href="#"
+                            class="link-underline">其他零售商</a>，或致電
+                        0800-000-000。
+                    </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-3 mb-4 mb-lg-0">
+                    <div class="d-flex flex-column align-items-center align-items-lg-end">
+                        <img class="ms-lg-auto mb-4" src="stylesheet/asset/logo/SVG/logo.svg" width="80" alt="FISH">
+                        <p class="text-lg-end text-center mb-0">
+                            電話：<a href="tel:02-18703030" class="link-underline">02-18703030</a>
+                            <br>
+                            信箱：<a href="mailto:123@gmail.com" class="link-underline">md46343113@msn.com
+                            </a>
+                        </p>
+                    </div>
                     <ul
-                        class="g-2 justify-content-evenly justify-content-between list-unstyled mb-0 row row-cols-auto flex-lg-nowrap">
-                        <li class="col"><a href="#"><i class="bi bi-facebook fs-5 text-info"></i></a></li>
-                        <li class="col"><a href="#"><i class="bi bi-instagram fs-5 text-info"></i></a></li>
-                        <li class="col"><a href="#"><i class="bi bi-twitter fs-5 text-info"></i></a></li>
-                        <li class="col"><a href="#"><i class="bi bi-youtube fs-5 text-info"></i></a></li>
-                        <li class="col"><a href="#"><i class="bi bi-twitch fs-5 text-info"></i></a></li>
-                        <li class="col"><a href="#"><i class="bi bi-discord fs-5 text-info"></i></a></li>
-                        <li class="col"><a href="#"><i class="bi bi-slack fs-5 text-info"></i></a></li>
-                        <li class="col"><a href="#"><i class="bi bi-github fs-5 text-info"></i></a></li>
-                        <li class="col"><a href="#"><i class="bi bi-playstation fs-5 text-info"></i></a></li>
-                        <li class="col"><a href="#"><i class="bi bi-xbox fs-5 text-info"></i></a></li>
-                        <li class="col"><a href="#"><i class="bi bi-envelope-fill fs-5 text-info"></i></a></li>
+                        class="g-2 justify-content-lg-end justify-content-center list-unstyled mb-0 row row-cols-auto flex-lg-nowrap">
+                        <li class="col"><a href="#"><i class="bi bi-facebook"></i></a></li>
+                        <li class="col"><a href="#"><i class="bi bi-instagram"></i></a></li>
+                        <li class="col"><a href="#"><i class="bi bi-twitter"></i></a></li>
+                        <li class="col"><a href="#"><i class="bi bi-youtube"></i></a></li>
                     </ul>
-                    <p class="mt-lg-2 text-info text-center text-lg-start">
-                        0912-345678 <br>
-                        Copyright © 2022 FISH <br>
-                        Site by way <br>
-                    </p>
                 </div>
+            </div>
+            <div class="row mt-lg-2 border-top pt-2 justify-content-between">
+                <div class="col-auto">Copyright © 2022 FISH Site by <a href="https://github.com/vvayHuang"
+                        class="link-underline">wayHuang</a></div>
+                <div class="col-auto">台灣</div>
             </div>
         </div>
     </footer>
