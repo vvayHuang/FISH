@@ -16,118 +16,88 @@
 </head>
 
 <body class="bg-primary">
-    <!-- 導覽列 -->
-    <nav class="navbar navbar-expand-lg bg-primary py-2 sticky-lg-top bg-opacity-75" style="backdrop-filter: blur(5px);">
-        <div class="container d-lg-block">
-            <!-- 漢堡選單 -->
-            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="bi bi-list text-secondary"></i>
-            </button>
-            <a class="navbar-brand me-0" href="index.html">
-                <img src="./stylesheet/asset/logo/SVG/logo.svg" width="75" class="d-lg-none" alt="">
-            </a>
-            <a href="cart.html" class="px-3 d-lg-none d-block">
-                <i class="bi bi-cart-fill text-secondary"></i>
-            </a>
-            <!-- 桌面版導覽列 -->
-            <div class="row align-items-center d-none d-lg-flex">
-                <div class="col-4 offset-4">
-                    <a href="index.html">
-                        <img src="./stylesheet/asset/logo/SVG/logo.svg" width="75" class="d-none d-lg-block m-auto"
-                            alt="">
-                    </a>
+    <!-- 內容 -->
+    <section class="py-4 bg-cover min-height"
+        style="background-image:linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url(https://images.unsplash.com/photo-1630771076981-4de3102e665d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);">
+        <a href="index.html" class="ms-2 ms-lg-5"><img src="stylesheet/asset/logo/SVG/logo.svg" height="45"
+                alt="fish-logo-svg"></a>
+        <div class="container">
+            <div class="row justify-content-center align-items-center g-lg-6 my-4">
+                <div class="col-lg-4">
+                    <h1 class="fw-bold text-center text-lg-end">付款成功</h1>
                 </div>
-                <div class="col-4">
-                    <ul class="navbar-nav align-items-center justify-content-end text-nowrap">
-                        <li class="nav-item">
-                            <a class="nav-link mx-3" href="#">關於</a>
+                <div class="col-lg-4 border-start-lg">
+                    <ul class="row list-unstyled row-cols-1 gy-2 mb-0">
+                        <li class="col">
+                            <button class="btn btn-secondary w-lg-75 w-100 py-3 position-relative rounded-4">
+                                <a class="text-decoration-none stretched-link text-warning" href="index.html">回首頁</a>
+                            </button>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-3" href="shop.html">商店</a>
+                        <li class="col">
+                            <button class="btn btn-secondary w-lg-75 w-100 py-3 position-relative rounded-4">
+                                <a class="text-decoration-none stretched-link text-warning" href="shop.html">繼續逛逛</a>
+                            </button>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-3" href="login.html">登入</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-3" href="cart.html">
-                                <i class="bi bi-cart-fill"></i>
-                            </a>
+                        <li class="col">
+                            <button class="btn btn-secondary w-lg-75 w-100 py-3 position-relative rounded-4">
+                                <a class="text-decoration-none stretched-link text-warning" href="cart.html">去購物車</a>
+                            </button>
                         </li>
                     </ul>
                 </div>
             </div>
-            <!-- 手機版導覽列 -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav align-items-center d-lg-none">
-                    <li class="nav-item">
-                        <a class="nav-link mx-3" href="#">關於</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-3" href="shop.html">商店</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-3" href="login.html">登入</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- 內容 -->
-    <section class="container py-4">
-        <div class="row justify-content-center align-items-center bg-cover" style="background-image: url(https://images.unsplash.com/photo-1533713692156-f70938dc0d54?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80); height: 80vh;">
-            <div class="col-lg-4">
-                <div class="process-bar-success d-flex justify-content-between m-4">
-                    <div class="process-circle-success"><i class="bi bi-check text-secondary"></i></div>
-                    <div class="process-circle-success"><i class="bi bi-check text-secondary"></i></div>
-                    <div class="process-circle-success"><i class="bi bi-check text-secondary"></i></div>
+            <div class="row justify-content-between align-items-end">
+                <div class="col-lg-4">
+                    <h4 class="fw-bold d-lg-inline-block">馬上訂閱</h4>
+                    <p class="mt-lg-auto mt-lg-5 mb-2 d-lg-inline-block">
+                        訂閱電子報，限時限量優惠不錯過
+                    </p>
+                    <div class="form-floating mb-3 d-flex">
+                        <input type="email" class="bg-secondary border-0 form-control text-primary   "
+                            id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput" class="text-primary">Email address</label>
+                        <button class="btn bg-secondary w-25" type="button" id="button-addon2">
+                            <i class="bi bi-forward text-primary"></i>
+                        </button>
+                    </div>
                 </div>
-                <h1 class="text-center display-4 fw-bold mb-4 text-info">付款成功</h1>
-                <button class="btn btn-secondary btn-lg w-100 py-3 position-relative rounded-4">
-                    <a class="text-decoration-none stretched-link text-success" href="shop.html">繼續逛逛</a>
-                </button>
+                <div class="col-lg-3">
+                    <p style="font-size: 12px;" class="mt-auto">
+                        更多選購方式：尋找<a href="#" class="link-underline">當地的直營店</a>或<a href="#"
+                            class="link-underline">其他零售商</a>，或致電
+                        0800-000-000。
+                    </p>
+                </div>
             </div>
         </div>
     </section>
     <!-- 頁尾 -->
-    <footer class="py-4">
-        <div class="container mb-lg-5">
-            <div class="row justify-content-between align-items-center gy-3">
-                <div class="col-lg-auto text-info">
-                    <h4 class="fw-bold">DON'T MISS OUT</h4>
-                    <div class="mt-lg-auto mt-lg-5 mb-2">
-                        Sign up to receive updates on new music, show dates, special merch & more.
-                    </div>
-                    <div class="form-floating mb-3 d-flex w-75">
-                        <input type="email" class="form-control bg-success border-0   " id="floatingInput"
-                            placeholder="name@example.com">
-                        <label for="floatingInput" class="text-secondary">Email address</label>
-                        <button class="btn btn-outline-success w-50" type="button" id="button-addon2">
-                            <i class="bi bi-forward"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <ul
-                        class="g-2 justify-content-evenly justify-content-between list-unstyled mb-0 row row-cols-auto flex-lg-nowrap">
-                        <li class="col"><a href="#"><i class="bi bi-facebook fs-5 text-info"></i></a></li>
-                        <li class="col"><a href="#"><i class="bi bi-instagram fs-5 text-info"></i></a></li>
-                        <li class="col"><a href="#"><i class="bi bi-twitter fs-5 text-info"></i></a></li>
-                        <li class="col"><a href="#"><i class="bi bi-youtube fs-5 text-info"></i></a></li>
-                        <li class="col"><a href="#"><i class="bi bi-twitch fs-5 text-info"></i></a></li>
-                        <li class="col"><a href="#"><i class="bi bi-discord fs-5 text-info"></i></a></li>
-                        <li class="col"><a href="#"><i class="bi bi-slack fs-5 text-info"></i></a></li>
-                        <li class="col"><a href="#"><i class="bi bi-github fs-5 text-info"></i></a></li>
-                        <li class="col"><a href="#"><i class="bi bi-playstation fs-5 text-info"></i></a></li>
-                        <li class="col"><a href="#"><i class="bi bi-xbox fs-5 text-info"></i></a></li>
-                        <li class="col"><a href="#"><i class="bi bi-envelope-fill fs-5 text-info"></i></a></li>
+    <footer class="py-4" style="background: linear-gradient(#3a0ca3,#300660);">
+        <div class="container py-4 py-lg-0">
+            <div class="row mt-lg-2 pt-2 justify-content-between">
+                <div class="col-auto">
+                    <div class="row">
+                        <div class="col-auto">
+                            <p>Copyright © 2022 FISH Site by <a href="https://github.com/vvayHuang"
+                                    class="link-underline">wayHuang</a></p>
+                        </div>
+                        <div class="col-auto">
+                            <a href="tel:02-18703030" class="border-end link-underline me-2 pe-3">聯絡電話</a>
+                            <a href="mailto:123@gmail.com" class="border-end link-underline me-2 pe-3">聯絡信箱
+                            </a>
+                        </div>
+                        <div class="col-auto">
+                            <ul
+                        class="list-unstyled row">
+                        <li class="col"><a href="#"><i class="bi bi-facebook"></i></a></li>
+                        <li class="col"><a href="#"><i class="bi bi-instagram"></i></a></li>
+                        <li class="col"><a href="#"><i class="bi bi-twitter"></i></a></li>
+                        <li class="col"><a href="#"><i class="bi bi-youtube"></i></a></li>
                     </ul>
-                    <p class="mt-lg-2 text-info text-center text-lg-start">
-                        0912-345678 <br>
-                        Copyright © 2022 FISH <br>
-                        Site by way <br>
-                    </p>
+                        </div>
+                    </div>
                 </div>
+                <div class="col-auto">台灣</div>
             </div>
         </div>
     </footer>

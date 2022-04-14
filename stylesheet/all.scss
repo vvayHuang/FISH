@@ -43,14 +43,14 @@
 // Utilities
 @import "../node_modules/bootstrap/scss/utilities/api";
 
+//bs icon
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
 //custom
 @import "./components/utilities";
 @import "./components/card-tag";
 @import "./components/banner";
 @import "./components/bg";
-@import "./components/break-block";
 @import "./components/cart";
-@import "./components/deco-box";
 @import "./components/hero";
 @import "./components/img-size";
-@import "./components/process";
