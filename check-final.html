@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./stylesheet/asset/logo/SVG/logo-icon.svg" type="icon" rel="shortcut icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="stylesheet/css/all.css">
+    <title>檢視訂單 - FISH</title>
+</head>
+
+<body class="bg-primary">
+    <!-- 導覽列 -->
+    <nav class="navbar navbar-expand-lg bg-primary py-2 bg-opacity-75" style="backdrop-filter: blur(5px);">
+        <div class="container d-lg-block">
+            <!-- 漢堡選單 -->
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="bi bi-list text-secondary"></i>
+            </button>
+            <a class="navbar-brand me-0" href="index.html">
+                <img src="./stylesheet/asset/logo/SVG/logo.svg" width="75" class="d-lg-none" alt="">
+            </a>
+            <a href="cart.html" class="px-3 d-lg-none d-block">
+                <i class="bi bi-cart-fill text-secondary"></i>
+            </a>
+            <!-- 桌面版導覽列 -->
+            <div class="row align-items-center d-none d-lg-flex justify-content-between">
+                <div class="col-auto">
+                    <a href="index.html">
+                        <img src="./stylesheet/asset/logo/SVG/logo.svg" width="75" class="d-none d-lg-block m-auto"
+                            alt="">
+                    </a>
+                </div>
+                <div class="col-4">
+                    <ul class="navbar-nav align-items-center justify-content-end text-nowrap">
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" href="shop.html">商店</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" href="login.html">登入</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" href="cart.html">
+                                <i class="bi bi-cart-fill"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 手機版導覽列 -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav align-items-center d-lg-none">
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="shop.html">商店</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="login.html">登入</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- 內容 -->
+    <section class="pb-4 mb-6">
+        <div class="container">
+            <!-- 表格 -->
+            <h2 class="text-center fs-lg-3 fs-6 bg-primary-light py-2">確認訂購商品及運送資訊</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <form class="needs-validation" novalidate>
+                        <fieldset class="row g-2">
+                            <!-- 您的訂購商品 -->
+                            <legend>
+                                <h3 class="mt-4 fs-4">您的訂購商品</h3>
+                            </legend>
+                            <div class="table-responsive">
+                                <table class="table align-middle">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"></th>
+                                            <th scope="col">商品</th>
+                                            <th scope="col">單價</th>
+                                            <th scope="col">數量</th>
+                                            <th scope="col">總計</th>
+                                            <th scope="col">操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>
+                                                <!-- Button trigger modal -->
+                                                <button type="button" class="link-underline bg-transparent border-0 text-secondary p-0" data-bs-toggle="modal"
+                                                    data-bs-target="#Modal1">
+                                                    日光燈魚
+                                                </button>
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="Modal1" tabindex="-1"
+                                                    aria-labelledby="Modal1Label" aria-hidden="true">
+                                                    <div class="modal-dialog modal-dialog-scrollable modal-xl">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header bg-primary-light">
+                                                                <button type="button" class="btn-close"
+                                                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body bg-primary-light">
+                                                                <div class="container-fluid">
+                                                                    <div class="row row-cols-1 row-cols-lg-2">
+                                                                        <!-- 上欄 -->
+                                                                        <div class="col">
+                                                                            <div style="background-image: url(https://images.unsplash.com/photo-1554768904-9f6dea726200?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=861&q=80);height: 400px;"
+                                                                                class="bg-cover sticky-lg-top"></div>
+                                                                        </div>
+                                                                        <!-- 下欄 -->
+                                                                        <div class="col">
+                                                                            <div class="card bg-primary-light">
+                                                                                <div class="card-body p-0">
+                                                                                    <span class="text-warning">全新</span>
+                                                                                    <h2 class="card-title">日光燈魚</h2>
+                                                                                    <p class="card-text">
+                                                                                        霓虹脂鯉，中文俗名日光燈魚、紅綠燈魚，為輻鰭魚綱脂鯉目脂鯉科的其中一個種，是一種小型熱帶魚。
+                                                                                    </p>
+                                                                                    <h3 class="fs-2 my-3">NT$1,450</h3>
+                                                                                    <p class="card-text"
+                                                                                        style="font-size: 12px;">
+                                                                                        購買須知：<br>
+                                                                                        1. 價格皆含運送費用。<br>
+                                                                                        2.
+                                                                                        優惠價格適用於符合資格的顧客。如須進一步了解如何獲享優惠價資格，請洽詢店內專員，或致電與我們聯繫。
+                                                                                    </p>
+                                                                                    <div class="gy-2 pt-4 row">
+                                                                                        <div class="col">
+                                                                                            <i class="bi bi-bag-heart me-2"></i>
+                                                                                            <div>
+                                                                                                <span>立即訂購。店內取貨：<br><strong>今天</strong>，地點：<a href="#" class="link-underline">樂華夜市</a></span>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col">
+                                                                                            <i class="bi bi-box-seam me-2"></i>
+                                                                                            <div>
+                                                                                                <span>下午 3 前訂購。 運送至<a href="#" class="link-underline">永和</a><br>
+                                                                                                    <strong>明天 —
+                                                                                                        免額外付費</strong></span>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>1,450</td>
+                                            <td>1</td>
+                                            <td>NT$ 1,450</td>
+                                            <td>
+                                                <a href="#" class="link-underline">刪除</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>
+                                                <!-- Button trigger modal -->
+                                                <button type="button" class="link-underline bg-transparent border-0 text-secondary p-0" data-bs-toggle="modal"
+                                                    data-bs-target="#Modal2">
+                                                    紅蓮燈魚
+                                                </button>
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="Modal2" tabindex="-1"
+                                                    aria-labelledby="Modal2Label" aria-hidden="true">
+                                                    <div class="modal-dialog modal-dialog-scrollable modal-xl">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header bg-primary-light">
+                                                                <button type="button" class="btn-close"
+                                                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body bg-primary-light">
+                                                                <div class="container-fluid">
+                                                                    <div class="row row-cols-1 row-cols-lg-2">
+                                                                        <!-- 上欄 -->
+                                                                        <div class="col">
+                                                                            <div style="background-image: url(https://images.unsplash.com/photo-1554768904-9f6dea726200?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=861&q=80);height: 400px;"
+                                                                                class="bg-cover sticky-lg-top"></div>
+                                                                        </div>
+                                                                        <!-- 下欄 -->
+                                                                        <div class="col">
+                                                                            <div class="card bg-primary-light">
+                                                                                <div class="card-body p-0">
+                                                                                    <span class="text-warning">全新</span>
+                                                                                    <h2 class="card-title">日光燈魚</h2>
+                                                                                    <p class="card-text">
+                                                                                        霓虹脂鯉，中文俗名日光燈魚、紅綠燈魚，為輻鰭魚綱脂鯉目脂鯉科的其中一個種，是一種小型熱帶魚。
+                                                                                    </p>
+                                                                                    <h3 class="fs-2 my-3">NT$1,450</h3>
+                                                                                    <p class="card-text"
+                                                                                        style="font-size: 12px;">
+                                                                                        購買須知：<br>
+                                                                                        1. 價格皆含運送費用。<br>
+                                                                                        2.
+                                                                                        優惠價格適用於符合資格的顧客。如須進一步了解如何獲享優惠價資格，請洽詢店內專員，或致電與我們聯繫。
+                                                                                    </p>
+                                                                                    <div class="gy-2 pt-4 row">
+                                                                                        <div class="col">
+                                                                                            <i class="bi bi-bag-heart me-2"></i>
+                                                                                            <div>
+                                                                                                <span>立即訂購。店內取貨：<br><strong>今天</strong>，地點：<a href="#" class="link-underline">樂華夜市</a></span>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col">
+                                                                                            <i class="bi bi-box-seam me-2"></i>
+                                                                                            <div>
+                                                                                                <span>下午 3 前訂購。 運送至<a href="#" class="link-underline">永和</a><br>
+                                                                                                    <strong>明天 —
+                                                                                                        免額外付費</strong></span>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>450</td>
+                                            <td>1</td>
+                                            <td>NT$ 450</td>
+                                            <td>
+                                                <a href="#" class="link-underline">刪除</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>
+                                                <!-- Button trigger modal -->
+                                                <button type="button" class="link-underline bg-transparent border-0 text-secondary p-0" data-bs-toggle="modal"
+                                                    data-bs-target="#Modal3">
+                                                    神仙魚
+                                                </button>
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="Modal3" tabindex="-1"
+                                                    aria-labelledby="Modal3Label" aria-hidden="true">
+                                                    <div class="modal-dialog modal-dialog-scrollable modal-xl">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header bg-primary-light">
+                                                                <button type="button" class="btn-close"
+                                                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body bg-primary-light">
+                                                                <div class="container-fluid">
+                                                                    <div class="row row-cols-1 row-cols-lg-2">
+                                                                        <!-- 上欄 -->
+                                                                        <div class="col">
+                                                                            <div style="background-image: url(https://images.unsplash.com/photo-1554768904-9f6dea726200?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=861&q=80);height: 400px;"
+                                                                                class="bg-cover sticky-lg-top"></div>
+                                                                        </div>
+                                                                        <!-- 下欄 -->
+                                                                        <div class="col">
+                                                                            <div class="card bg-primary-light">
+                                                                                <div class="card-body p-0">
+                                                                                    <span class="text-warning">全新</span>
+                                                                                    <h2 class="card-title">日光燈魚</h2>
+                                                                                    <p class="card-text">
+                                                                                        霓虹脂鯉，中文俗名日光燈魚、紅綠燈魚，為輻鰭魚綱脂鯉目脂鯉科的其中一個種，是一種小型熱帶魚。
+                                                                                    </p>
+                                                                                    <h3 class="fs-2 my-3">NT$1,450</h3>
+                                                                                    <p class="card-text"
+                                                                                        style="font-size: 12px;">
+                                                                                        購買須知：<br>
+                                                                                        1. 價格皆含運送費用。<br>
+                                                                                        2.
+                                                                                        優惠價格適用於符合資格的顧客。如須進一步了解如何獲享優惠價資格，請洽詢店內專員，或致電與我們聯繫。
+                                                                                    </p>
+                                                                                    <div class="gy-2 pt-4 row">
+                                                                                        <div class="col">
+                                                                                            <i class="bi bi-bag-heart me-2"></i>
+                                                                                            <div>
+                                                                                                <span>立即訂購。店內取貨：<br><strong>今天</strong>，地點：<a href="#" class="link-underline">樂華夜市</a></span>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col">
+                                                                                            <i class="bi bi-box-seam me-2"></i>
+                                                                                            <div>
+                                                                                                <span>下午 3 前訂購。 運送至<a href="#" class="link-underline">永和</a><br>
+                                                                                                    <strong>明天 —
+                                                                                                        免額外付費</strong></span>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>990</td>
+                                            <td>1</td>
+                                            <td>NT$ 990</td>
+                                            <td>
+                                                <a href="#" class="link-underline">刪除</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <legend>
+                                <h3 class="mt-4 fs-4">您的姓名與地址</h3>
+                            </legend>
+                            <!-- 姓名 -->
+                            <div class="row g-2">
+                                <div class="col-lg-6 form-floating">
+                                    <input type="text" class="form-control bg-transparent border form-control rounded-4"
+                                        id="floatingInput" placeholder="Lastname" name="Lastname" value="松島" disabled>
+                                    <label for="floatingInput" class="form-label">姓氏</label>
+                                    <div class="valid-feedback">
+                                        沒錯
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 form-floating">
+                                    <input type="text" class="form-control bg-transparent border form-control rounded-4"
+                                        id="floatingInput" placeholder="Firstname" name="Firstname" value="菜菜子"
+                                        disabled>
+                                    <label for="floatingInput" class="form-label">名字</label>
+                                    <div class="invalid-feedback">
+                                        錯囉
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 地址 -->
+                            <div class="row g-2">
+                                <div class="col-lg-2 form-floating">
+                                    <input type="text" class="form-control bg-transparent border form-control rounded-4"
+                                        id="floatingInput" placeholder="220" value="220" name="postal code" disabled>
+                                    <label for="floatingInput" class="form-label">郵遞區號</label>
+                                </div>
+                                <div class="col-lg-2 form-floating">
+                                    <select class="form-select bg-transparent border rounded-4" id="floatingSelectGrid"
+                                        aria-label="Floating label select example" name="city" disabled>
+                                        <option selected disabled value="">請選擇</option>
+                                        <option selected value="1">基隆市</option>
+                                        <option value="2">台北市</option>
+                                        <option value="3">台中市</option>
+                                        <option value="4">台南市</option>
+                                        <option value="5">高雄市</option>
+                                        <option value="6">台東市</option>
+                                    </select>
+                                    <label for="floatingSelectGrid">縣／市</label>
+                                </div>
+                                <div class="col-lg-4 form-floating">
+                                    <input type="text" class="form-control bg-transparent border form-control rounded-4"
+                                        id="floatingInput" placeholder="address" name="address" value="好好鎮設計區飛翔路51號4樓"
+                                        disabled>
+                                    <label for="floatingInput" class="form-label">鄉鎮市區／街道名稱／巷／弄／號／樓</label>
+                                </div>
+                                <div class="col-lg-2 form-floating">
+                                    <input type="text" class="form-control bg-transparent border form-control rounded-4"
+                                        id="floatingInput" placeholder="address" name="address" value=":D" disabled>
+                                    <label for="floatingInput" class="form-label">附加詳細地址</label>
+                                </div>
+                                <div class="col-lg-2 form-floating">
+                                    <input type="text" class="form-control bg-transparent border form-control rounded-4"
+                                        id="floatingInput" placeholder="台灣" value="台灣" name="country" disabled>
+                                    <label for="floatingInput" class="form-label">國家／地區</label>
+                                </div>
+                            </div>
+                            <legend>
+                                <h3 class="mt-4 fs-4">您的聯絡資訊</h3>
+                            </legend>
+                            <!-- 聯絡資訊 -->
+                            <div class="row g-2">
+                                <div class="col-lg-6 form-floating">
+                                    <input type="email"
+                                        class="form-control bg-transparent border form-control rounded-4"
+                                        id="floatingInput" placeholder="email" name="email" value="tsai@gmail.com"
+                                        disabled>
+                                    <label for="floatingInput" class="form-label">電子郵件地址</label>
+                                </div>
+                                <div class="col-lg-6 form-floating">
+                                    <input type="tel" class="form-control bg-transparent border form-control rounded-4"
+                                        id="floatingInput" placeholder="tel" name="tel" value="0939-879451" disabled>
+                                    <label for="floatingInput" class="form-label">行動電話號碼</label>
+                                </div>
+                            </div>
+                            <!-- 支付方式 -->
+                            <legend>
+                                <h3 class="mt-4 fs-4">支付方式</h3>
+                            </legend>
+                            <div class="row g-2">
+                                <div class="col-lg-3 form-floating">
+                                    <input type="text" class="form-control bg-transparent border form-control rounded-4"
+                                        id="floatingInput" value="Visa, Mastercard" name="credit card" disabled>
+                                    <label for="floatingInput" class="form-label">信用卡、金融卡或分期付款</label>
+                                </div>
+                                <div class="col-lg-3 form-floating">
+                                    <input type="text" class="form-control bg-transparent border form-control rounded-4"
+                                        id="floatingInput" placeholder="Firstname" name="Firstname"
+                                        value="9987 4456 1238 5566" disabled>
+                                    <label for="floatingInput" class="form-label">信用卡、金融卡號</label>
+                                </div>
+                                <div class="col-lg-3 form-floating">
+                                    <input type="tel" class="form-control bg-transparent border form-control rounded-4"
+                                        id="floatingInput" placeholder="Firstname" name="Firstname" value="06/26"
+                                        disabled>
+                                    <label for="floatingInput" class="form-label">到期月年</label>
+                                </div>
+                                <div class="col-lg-3 form-floating">
+                                    <input type="tel" class="form-control bg-transparent border form-control rounded-4"
+                                        id="floatingInput" placeholder="Firstname" name="Firstname" value="666"
+                                        disabled>
+                                    <label for="floatingInput" class="form-label">安全碼</label>
+                                </div>
+                            </div>
+                            <!-- 電子發票 -->
+                            <legend>
+                                <h3 class="mt-4 fs-4">電子發票</h3>
+                            </legend>
+                            <div class="row g-2">
+                                <div class="col-lg-6 form-floating">
+                                    <input type="text" class="form-control bg-transparent border form-control rounded-4"
+                                        id="floatingInput" value="非營業人電子發票" name="credit card" disabled>
+                                    <label for="floatingInput" class="form-label">類型</label>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckCheckedDisabled" checked disabled>
+                                        <label class="form-check-label" for="flexCheckCheckedDisabled">
+                                          寄送地址與購買人相同
+                                        </label>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="col mt-lg-8">
+                                <button class="btn btn-secondary rounded-4 w-100 position-relative" type="submit">
+                                    <a href="payment.html"
+                                        class="text-primary text-decoration-none stretched-link">回上頁</a>
+                                </button>
+                            </div>
+                            <div class="col mt-lg-8">
+                                <button class="btn btn-secondary rounded-4 w-100 position-relative" type="submit">
+                                    <a href="checkout-success.html"
+                                        class="text-primary text-decoration-none stretched-link">完成訂單</a>
+                                </button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 頁尾 -->
+    <footer class="py-4" style="background: linear-gradient(#3a0ca3,#300660); font-size: 12px;">
+        <!-- 需要進一步協助 -->
+        <div class="border-bottom border-top">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <p class="mb-0 py-4">
+                            需要進一步協助？立即<a href="#" class="link-underline">與我們交流</a>或致電 <a href="tel:0800-020-000"
+                                class="link-underline">0800-020-000</a>。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="gy-4 justify-content-evenly justify-content-lg-between row row-cols-1">
+                <!-- 付款常見問題 -->
+                <div class="col">
+                    <div class="accordion accordion-flush" id="q-a">
+                        <div class="accordion-item bg-transparent">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button px-0 collapsed fs-4 px-lg-0 shadow-none" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-qa" aria-expanded="false"
+                                    aria-controls="flush-qa">
+                                    付款常見問題
+                                </button>
+                            </h2>
+                            <!-- 常見問題內容 -->
+                            <div id="flush-qa" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                                data-bs-parent="#q-a">
+                                <div class="accordion-body px-0">
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <div class="accordion-item bg-transparent border-bottom">
+                                            <h2 class="accordion-header" id="flush-headingOne">
+                                                <button class="accordion-button px-0 collapsed shadow-none text-decoration-none"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                                    aria-controls="flush-collapseOne">
+                                                    我有哪些付款選項？
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                                aria-labelledby="flush-headingOne"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body px-0 fw-lighter">
+                                                    我們接受大部分的信用卡與金融卡。另有其他可用的付款方式，包含銀行轉帳與信用卡分期付款。某些付款選項可能不適用於所有產品。你可以撥打
+                                                    0800-020-000，以了解詳細資訊。
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item bg-transparent border-bottom">
+                                            <h2 class="accordion-header" id="flush-headingTwo">
+                                                <button class="accordion-button px-0 collapsed shadow-none text-decoration-none"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                                    aria-controls="flush-collapseTwo">
+                                                    我有哪些分期選項？
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                                aria-labelledby="flush-headingTwo"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body px-0 fw-lighter">
+                                                    結帳時，你可以透過合作的信用卡採用分期付款。需達到最低購買數量。
+                                                    分期付款僅適用於購買單一商品。如果你對於購買多件商品有任何疑問，請撥打 0800-020-000 洽詢專員。
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item bg-transparent border-bottom">
+                                            <h2 class="accordion-header" id="flush-headingThree">
+                                                <button class="accordion-button px-0 collapsed shadow-none text-decoration-none"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                                    aria-controls="flush-collapseThree">
+                                                    我何時能收到發票？
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                                aria-labelledby="flush-headingThree"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body px-0 fw-lighter">
+                                                    電子發票會在產品出貨當天核發。根據各個發票選項，你收到發票的時間將有所不同。
+                                                    <ul>
+                                                        <li>非營業人電子發票：產品出貨後 7 至 10 個工作天。</li>
+                                                        <li>營業人電子發票：產品出貨後，發票將會以電子郵件的方式寄送至您指定的電子信箱。</li>
+                                                        <li>雲端發票 - 共通性載具：發票將會在產品出貨後 48 小時內傳送至財政部。屆時，您可透過載具帳戶查詢發票。</li>
+                                                        <li>雲端發票 - 捐贈：發票將會在產品出貨後 48 小時內傳送至財政部。屆時，發票將捐贈給您所選擇的受捐贈機關或團體。
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4 mb-lg-0">
+                    <p>
+                        使用業界標準加密技術來保護你的個人資訊機密。
+                        我們會透過你的網際網路 IP 位址所對應的地理區域，或你上次瀏覽網站輸入的位置資訊，估計你的約略位置。
+                    </p>
+                </div>
+                <div class="col-auto">
+                    <p class="mb-0">
+                        更多選購方式：尋找<a href="#" class="link-underline">當地的直營店</a>或<a href="#"
+                            class="link-underline">其他零售商</a>，或致電
+                        0800-000-000。
+                    </p>
+                </div>
+                <div class="col-auto">
+                    <ul class="list-unstyled mb-0 row list-unstyled">
+                        <li class="col"><a href="#"><i class="bi bi-facebook"></i></a></li>
+                        <li class="col"><a href="#"><i class="bi bi-instagram"></i></a></li>
+                        <li class="col"><a href="#"><i class="bi bi-twitter"></i></a></li>
+                        <li class="col"><a href="#"><i class="bi bi-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="justify-content-center justify-content-lg-between mt-4 mt-lg-2 pt-2 row border-top">
+                <div class="col-auto">
+                    <p class="mb-0">
+                        Copyright © 2022 FISH Site by <a href="https://github.com/vvayHuang"
+                            class="link-underline">wayHuang</a>
+                    </p>
+                </div>
+                <div class="col-auto">
+                    <p class="mb-0">台灣</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
+</body>
+
+</html>

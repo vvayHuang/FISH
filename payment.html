@@ -6,10 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./stylesheet/asset/logo/SVG/logo-icon.svg" type="icon" rel="shortcut icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&family=Oswald:wght@400;700&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="stylesheet/css/all.css">
     <title>付款 - FISH</title>
@@ -69,221 +65,439 @@
         </div>
     </nav>
     <!-- 內容 -->
-    <section class="py-4">
+    <section class="pb-4 mb-6">
         <div class="container">
-            <h2 class="text-center fs-3 bg-primary-light py-2">你想使用何種付款方式？</h2>
-            <fieldset>
-                <legend>
-                    <h3 class="mt-4 fs-4">支付方式</h3>
-                </legend>
-                <form class="row g-2 needs-validation" novalidate>
-                    <div class="row g-2">
-                        <div class="col-lg-4 form-floating">
-                            <input type="text" class="form-control bg-transparent border form-control rounded-4"
-                                id="floatingInput" value="Visa, Mastercard" name="credit card" disabled>
-                            <label for="floatingInput" class="form-label">信用卡、金融卡或分期付款</label>
+            <!-- 訂單摘要 -->
+            <div class="row justify-content-between mb-4 border-bottom pb-2 sticky-lg-top bg-primary pt-4">
+                <div class="col-auto">
+                    <h3 class="fs-6">結帳</h3>
+                </div>
+                <div class="col-auto">
+                    <a class="link-underline" data-bs-toggle="offcanvas" href="#offcanvasEnd" role="button"
+                        aria-controls="offcanvasEnd">顯示訂單摘要</a>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasEnd"
+                        aria-labelledby="offcanvasEndLabel">
+                        <div class="offcanvas-header bg-primary-light">
+                            <button type="button" class="btn-close text-reset rounded-circle bg-light"
+                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
-                        <div class="col">
-                            <ul class="mx-lg-5" style="font-size: 12px;">
-                                <li>
-                                    信用卡分期選項僅適用於單件商品的訂單。
-                                </li>
-                                <li>
-                                    請輸入完整的信用卡號碼以檢視分期付款選項。
-                                </li>
-                                <li>
-                                    分期付款不適用於金融卡。
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row g-2">
-                        <p>請輸入你的卡片資訊：</p>
-                        <div class="col-lg-4 form-floating">
-                            <input type="text" class="form-control bg-transparent border form-control rounded-4"
-                                id="floatingInput" placeholder="Firstname" name="Firstname" required>
-                            <label for="floatingInput" class="form-label">信用卡、金融卡號</label>
-                            <div class="valid-feedback">
-                                Looks good!
+                        <div class="offcanvas-body px-4 bg-primary-light">
+                            <!-- 上欄 -->
+                            <h4 class="border-bottom border-secondary fs-6 pb-3">你的訂單總金額</h4>
+                            <!-- 你的訂單總金額 -->
+                            <div class="justify-content-end row row-cols-1 gy-2 mb-4">
+                                <div class="col">
+                                    <div class="row justify-content-between fw-light">
+                                        <div class="col-auto">
+                                            <p class="mb-0 text-nowrap">日光燈魚</p>
+                                        </div>
+                                        <div class="col-auto">
+                                            <span class="text-nowrap">NT$ 1,450</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="row justify-content-between fw-light">
+                                        <div class="col-auto">
+                                            <p class="mb-0 text-nowrap">紅蓮燈魚</p>
+                                        </div>
+                                        <div class="col-auto">
+                                            <span class="text-nowrap">NT$ 450</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="row justify-content-between fw-light">
+                                        <div class="col-auto">
+                                            <p class="mb-0 text-nowrap">神仙魚</p>
+                                        </div>
+                                        <div class="col-auto">
+                                            <span class="text-nowrap">NT$ 990</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="justify-content-end row row-cols-1 gy-2 mb-4">
+                                <div class="col">
+                                    <div class="row justify-content-between fw-light">
+                                        <div class="col-auto">
+                                            <p class="mb-0 text-nowrap">小計</p>
+                                        </div>
+                                        <div class="col-auto">
+                                            <span class="text-nowrap">NT$ 2,890</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="row justify-content-between fw-light">
+                                        <div class="col-auto">
+                                            <p class="mb-0 text-nowrap">運費</p>
+                                        </div>
+                                        <div class="col-auto">
+                                            <span class="text-nowrap">NT$ 200</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="justify-content-end row row-cols-1 gy-2 mb-6">
+                                <div class="col">
+                                    <div class="row justify-content-between">
+                                        <div class="col-auto">
+                                            <p class="mb-0 text-nowrap">您的總金額</p>
+                                        </div>
+                                        <div class="col-auto">
+                                            <span class="text-nowrap">NT$ 3,090</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 下欄 -->
+                            <h4 class="border-bottom border-secondary fs-6 pb-3">你的訂單資訊</h4>
+                            <div class="justify-content-end row row-cols-1 gy-2 mb-4">
+                                <div class="col">
+                                    <div class="row justify-content-between">
+                                        <div class="col-auto">
+                                            <p class="mb-0 text-nowrap">送貨詳細資訊</p>
+                                        </div>
+                                        <div class="col-auto">
+                                            <a href="deliver.html" class="link-underline">變更</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="row justify-content-between">
+                                        <div class="col-auto">
+                                            <p class="mb-0 text-nowrap">付款</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="row justify-content-between">
+                                        <div class="col-auto">
+                                            <p class="mb-0 text-nowrap">發票類型</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row g-2">
-                        <div class="col-lg-3 form-floating">
-                            <input type="tel" class="form-control bg-transparent border form-control rounded-4"
-                                id="floatingInput" placeholder="Firstname" name="Firstname" required>
-                            <label for="floatingInput" class="form-label">到期月年</label>
-                            <div class="valid-feedback">
-                                Looks good!
+                </div>
+            </div>
+            <!-- 表格 -->
+            <h2 class="text-center fs-lg-3 fs-6 bg-primary-light py-2">你想使用何種付款方式？</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <form class="row g-2 needs-validation" novalidate>
+                        <fieldset class="row g-2">
+                            <legend>
+                                <h3 class="mt-4 fs-4">支付方式</h3>
+                            </legend>
+                            <div class="row g-2">
+                                <div class="col-lg-6 form-floating">
+                                    <input type="text" class="form-control bg-transparent border form-control rounded-4"
+                                        id="floatingInput" value="Visa, Mastercard" name="credit card" disabled>
+                                    <label for="floatingInput" class="form-label">信用卡、金融卡或分期付款</label>
+                                </div>
+                                <div class="col-lg-6">
+                                    <ul class="mx-lg-5" style="font-size: 12px;">
+                                        <li>
+                                            信用卡分期選項僅適用於單件商品的訂單。
+                                        </li>
+                                        <li>
+                                            請輸入完整的信用卡號碼以檢視分期付款選項。
+                                        </li>
+                                        <li>
+                                            分期付款不適用於金融卡。
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-lg-1 form-floating">
-                            <input type="tel" class="form-control bg-transparent border form-control rounded-4"
-                                id="floatingInput" placeholder="Firstname" name="Firstname" required>
-                            <label for="floatingInput" class="form-label">安全碼</label>
-                            <div class="valid-feedback">
-                                Looks good!
+                            <div class="row g-2">
+                                <p>請輸入你的卡片資訊：</p>
+                                <div class="col-lg-6 form-floating">
+                                    <input type="text" class="form-control bg-transparent border form-control rounded-4"
+                                        id="floatingInput" placeholder="Firstname" name="Firstname" required>
+                                    <label for="floatingInput" class="form-label">信用卡、金融卡號</label>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <legend>
-                        <h3 class="mt-4 fs-4">需要哪一種電子發票？</h3>
-                    </legend>
-                    <div class="row g-2">
-                        <div class="col-lg-4">
-                            <div class="accordion accordion-flush" id="accordionFlushExample">
-                                <div class="accordion-item bg-transparent border rounded-4 mb-3">
-                                    <h2 class="accordion-header" id="flush-headingOne">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
-                                            aria-expanded="false" aria-controls="flush-collapseOne">
-                                            電子發票
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseOne" class="accordion-collapse collapse"
-                                        aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body bg-image-linear-gradient">
-                                            <p>發票將在產品出貨後 7 至 10 個工作天內寄送至您所指定的台灣地址。</p>
-                                            <div class="row g-2 row-cols-1">
-                                                <div class="col form-floating">
-                                                    <input type="text"
-                                                        class="form-control bg-transparent border form-control rounded-4"
-                                                        id="floatingInput" placeholder="lastname" name="lastname"
-                                                        required>
-                                                    <label for="floatingInput" class="form-label">姓氏</label>
-                                                </div>
-                                                <div class="col form-floating">
-                                                    <input type="text"
-                                                        class="form-control bg-transparent border form-control rounded-4"
-                                                        id="floatingInput" placeholder="firstname" name="firstname"
-                                                        required>
-                                                    <label for="floatingInput" class="form-label">名字</label>
-                                                </div>
-                                                <div class="col form-floating">
-                                                    <input type="text"
-                                                        class="form-control bg-transparent border form-control rounded-4"
-                                                        id="floatingInput" placeholder="address" name="address"
-                                                        required>
-                                                    <label for="floatingInput"
-                                                        class="form-label">鄉鎮市區／街道名稱／巷／弄／號／樓</label>
-                                                </div>
-                                                <div class="col form-floating">
-                                                    <input type="text"
-                                                        class="form-control bg-transparent border form-control rounded-4"
-                                                        id="floatingInput" placeholder="address" name="address"
-                                                        required>
-                                                    <label for="floatingInput" class="form-label">附加詳細地址</label>
-                                                </div>
-                                                <div class="row g-2">
-                                                    <div class="col form-floating">
-                                                        <input type="text"
-                                                            class="form-control bg-transparent border form-control rounded-4"
-                                                            id="floatingInput" placeholder="220" value="220"
-                                                            name="postal code" required>
-                                                        <label for="floatingInput" class="form-label">郵遞區號</label>
+                            <div class="row g-2">
+                                <div class="col-lg-3 form-floating">
+                                    <input type="tel" class="form-control bg-transparent border form-control rounded-4"
+                                        id="floatingInput" placeholder="Firstname" name="Firstname" required>
+                                    <label for="floatingInput" class="form-label">到期月年</label>
+                                </div>
+                                <div class="col-lg-3 form-floating">
+                                    <input type="tel" class="form-control bg-transparent border form-control rounded-4"
+                                        id="floatingInput" placeholder="Firstname" name="Firstname" required>
+                                    <label for="floatingInput" class="form-label">安全碼</label>
+                                </div>
+                            </div>
+                            <legend>
+                                <h3 class="mt-4 fs-4">需要哪一種電子發票？</h3>
+                            </legend>
+                            <div class="row g-2">
+                                <div class="col-lg-6">
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <div class="accordion-item bg-transparent border rounded-4 mb-3">
+                                            <h2 class="accordion-header" id="qa-1">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#qa1"
+                                                    aria-expanded="false" aria-controls="qa1">
+                                                    非營業人電子發票
+                                                </button>
+                                            </h2>
+                                            <div id="qa1" class="accordion-collapse collapse"
+                                                aria-labelledby="qa-1"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body bg-image-linear-gradient">
+                                                    <p>發票將在產品出貨後 7 至 10 個工作天內寄送至您所指定的台灣地址。</p>
+                                                    <div class="row g-2 row-cols-1">
+                                                        <div class="col form-floating">
+                                                            <input type="text"
+                                                                class="form-control bg-transparent border form-control rounded-4"
+                                                                id="floatingInput" placeholder="lastname"
+                                                                name="lastname" required>
+                                                            <label for="floatingInput" class="form-label">姓氏</label>
+                                                        </div>
+                                                        <div class="col form-floating">
+                                                            <input type="text"
+                                                                class="form-control bg-transparent border form-control rounded-4"
+                                                                id="floatingInput" placeholder="firstname"
+                                                                name="firstname" required>
+                                                            <label for="floatingInput" class="form-label">名字</label>
+                                                        </div>
+                                                        <div class="col form-floating">
+                                                            <input type="text"
+                                                                class="form-control bg-transparent border form-control rounded-4"
+                                                                id="floatingInput" placeholder="address" name="address"
+                                                                required>
+                                                            <label for="floatingInput"
+                                                                class="form-label">鄉鎮市區／街道名稱／巷／弄／號／樓</label>
+                                                        </div>
+                                                        <div class="col form-floating">
+                                                            <input type="text"
+                                                                class="form-control bg-transparent border form-control rounded-4"
+                                                                id="floatingInput" placeholder="address" name="address"
+                                                                required>
+                                                            <label for="floatingInput" class="form-label">附加詳細地址</label>
+                                                        </div>
+                                                        <div class="row g-2">
+                                                            <div class="col form-floating">
+                                                                <input type="text"
+                                                                    class="form-control bg-transparent border form-control rounded-4"
+                                                                    id="floatingInput" placeholder="220" value="220"
+                                                                    name="postal code" required>
+                                                                <label for="floatingInput"
+                                                                    class="form-label">郵遞區號</label>
+                                                            </div>
+                                                            <div class="col form-floating">
+                                                                <input type="text"
+                                                                    class="form-control bg-transparent border form-control rounded-4"
+                                                                    id="floatingInput" placeholder="台灣" value="台灣"
+                                                                    name="country" required>
+                                                                <label for="floatingInput"
+                                                                    class="form-label">國家／地區</label>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <div class="col form-floating">
-                                                        <input type="text"
-                                                            class="form-control bg-transparent border form-control rounded-4"
-                                                            id="floatingInput" placeholder="台灣" value="台灣"
-                                                            name="country" required>
-                                                        <label for="floatingInput" class="form-label">國家／地區</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item bg-transparent border rounded-4 mb-3">
+                                            <h2 class="accordion-header" id="qa-2">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#qa2"
+                                                    aria-expanded="false" aria-controls="qa2">
+                                                    雲端發票
+                                                </button>
+                                            </h2>
+                                            <div id="qa2" class="accordion-collapse collapse"
+                                                aria-labelledby="qa-2"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body bg-image-linear-gradient">
+                                                    <p>發票將在產品出貨後，傳送至您指定的共通性載具帳戶。</p>
+                                                    <div class="row g-2 row-cols-1">
+                                                        <div class="col form-floating">
+                                                            <input type="number"
+                                                                class="form-control bg-transparent border form-control rounded-4"
+                                                                id="floatingInput" placeholder="number" name="number"
+                                                                required>
+                                                            <label for="floatingInput" class="form-label">載具號碼</label>
+                                                        </div>
+                                                        <div class="col form-floating">
+                                                            <input type="number"
+                                                                class="form-control bg-transparent border form-control rounded-4"
+                                                                id="floatingInput" placeholder="number" name="number"
+                                                                required>
+                                                            <label for="floatingInput"
+                                                                class="form-label">再次輸入載具號碼</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item bg-transparent border rounded-4 mb-3">
+                                            <h2 class="accordion-header" id="qa-3">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#qa3"
+                                                    aria-expanded="false" aria-controls="qa3">
+                                                    捐贈發票
+                                                </button>
+                                            </h2>
+                                            <div id="qa3" class="accordion-collapse collapse"
+                                                aria-labelledby="qa-3"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body bg-image-linear-gradient">
+                                                    <p>選擇此發票類型，即代表您同意發票將在產品出貨後，捐贈給您所選擇的受捐贈機關或團體。</p>
+                                                    <div class="row g-2 row-cols-1">
+                                                        <div class="col form-floating">
+                                                            <input type="number"
+                                                                class="form-control bg-transparent border form-control rounded-4"
+                                                                id="floatingInput" placeholder="number" name="number"
+                                                                required>
+                                                            <label for="floatingInput" class="form-label">捐贈號碼</label>
+                                                        </div>
+                                                        <div class="col form-floating">
+                                                            <input type="number"
+                                                                class="form-control bg-transparent border form-control rounded-4"
+                                                                id="floatingInput" placeholder="number" name="number"
+                                                                required>
+                                                            <label for="floatingInput"
+                                                                class="form-label">再次輸入捐贈號碼</label>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="accordion-item bg-transparent border rounded-4 mb-3">
-                                    <h2 class="accordion-header" id="flush-headingTwo">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
-                                            aria-expanded="false" aria-controls="flush-collapseOne">
-                                            雲端發票
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                                        aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body bg-image-linear-gradient">
-                                            <p>發票將在產品出貨後，傳送至您指定的共通性載具帳戶。</p>
-                                            <div class="row g-2 row-cols-1">
-                                                <div class="col form-floating">
-                                                    <input type="number"
-                                                        class="form-control bg-transparent border form-control rounded-4"
-                                                        id="floatingInput" placeholder="number" name="number"
-                                                        required>
-                                                    <label for="floatingInput" class="form-label">載具號碼</label>
-                                                </div>
-                                                <div class="col form-floating">
-                                                    <input type="number"
-                                                        class="form-control bg-transparent border form-control rounded-4"
-                                                        id="floatingInput" placeholder="number" name="number"
-                                                        required>
-                                                    <label for="floatingInput" class="form-label">再次輸入載具號碼</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item bg-transparent border rounded-4 mb-3">
-                                    <h2 class="accordion-header" id="flush-headingThree">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
-                                            aria-expanded="false" aria-controls="flush-collapseOne">
-                                            捐贈發票
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseThree" class="accordion-collapse collapse"
-                                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body bg-image-linear-gradient">
-                                            <p>選擇此發票類型，即代表您同意發票將在產品出貨後，捐贈給您所選擇的受捐贈機關或團體。</p>
-                                            <div class="row g-2 row-cols-1">
-                                                <div class="col form-floating">
-                                                    <input type="number"
-                                                        class="form-control bg-transparent border form-control rounded-4"
-                                                        id="floatingInput" placeholder="number" name="number"
-                                                        required>
-                                                    <label for="floatingInput" class="form-label">捐贈號碼</label>
-                                                </div>
-                                                <div class="col form-floating">
-                                                    <input type="number"
-                                                        class="form-control bg-transparent border form-control rounded-4"
-                                                        id="floatingInput" placeholder="number" name="number"
-                                                        required>
-                                                    <label for="floatingInput" class="form-label">再次輸入捐贈號碼</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mt-8">
-                        <button class="btn btn-secondary rounded-4 w-100 position-relative" type="submit">
-                            <a href="checkout-success.html" class="text-warning text-decoration-none stretched-link">完成訂單</a>
-                        </button>
-                    </div>
-                </form>
-            </fieldset>
+                            <div class="col-lg-6 mt-8">
+                                <button class="btn btn-secondary rounded-4 w-100 position-relative" type="submit">
+                                    <a href="check-final.html"
+                                        class="text-primary text-decoration-none stretched-link">檢視訂單</a>
+                                </button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
     <!-- 頁尾 -->
-    <footer class="py-4" style="background: linear-gradient(#3a0ca3,#300660);">
-        <div class="container border-top py-4 py-lg-0">
-            <div class="row justify-content-end align-items-center gy-3 mt-lg-2">
-                <div class="col-lg-3 mb-4 mb-lg-0">
-                    <div class="d-flex flex-column align-items-center align-items-lg-end">
-                        <img class="ms-lg-auto mb-4" src="stylesheet/asset/logo/SVG/logo.svg" width="80" alt="FISH">
-                        <p class="text-lg-end text-center mb-0">
-                            電話：<a href="tel:02-18703030" class="link-underline">02-18703030</a>
-                            <br>
-                            信箱：<a href="mailto:123@gmail.com" class="link-underline">md46343113@msn.com
-                            </a>
+    <footer class="py-4" style="background: linear-gradient(#3a0ca3,#300660); font-size: 12px;">
+        <!-- 需要進一步協助 -->
+        <div class="border-bottom border-top">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <p class="mb-0 py-4">
+                            需要進一步協助？立即<a href="#" class="link-underline">與我們交流</a>或致電 <a href="tel:0800-020-000"
+                                class="link-underline">0800-020-000</a>。
                         </p>
                     </div>
-                    <ul
-                        class="g-2 justify-content-lg-end justify-content-center list-unstyled mb-0 row row-cols-auto flex-lg-nowrap">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="gy-4 justify-content-evenly justify-content-lg-between row row-cols-1">
+                <!-- 付款常見問題 -->
+                <div class="col">
+                    <div class="accordion accordion-flush" id="q-a">
+                        <div class="accordion-item bg-transparent">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button px-0 collapsed fs-4 px-lg-0 shadow-none" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-qa" aria-expanded="false"
+                                    aria-controls="flush-qa">
+                                    付款常見問題
+                                </button>
+                            </h2>
+                            <!-- 常見問題內容 -->
+                            <div id="flush-qa" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                                data-bs-parent="#q-a">
+                                <div class="accordion-body px-0">
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <div class="accordion-item bg-transparent border-bottom">
+                                            <h2 class="accordion-header" id="flush-headingOne">
+                                                <button class="accordion-button px-0 collapsed shadow-none text-decoration-none"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                                    aria-controls="flush-collapseOne">
+                                                    我有哪些付款選項？
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                                aria-labelledby="flush-headingOne"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body px-0 fw-lighter">
+                                                    我們接受大部分的信用卡與金融卡。另有其他可用的付款方式，包含銀行轉帳與信用卡分期付款。某些付款選項可能不適用於所有產品。你可以撥打
+                                                    0800-020-000，以了解詳細資訊。
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item bg-transparent border-bottom">
+                                            <h2 class="accordion-header" id="flush-headingTwo">
+                                                <button class="accordion-button px-0 collapsed shadow-none text-decoration-none"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                                    aria-controls="flush-collapseTwo">
+                                                    我有哪些分期選項？
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                                aria-labelledby="flush-headingTwo"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body px-0 fw-lighter">
+                                                    結帳時，你可以透過合作的信用卡採用分期付款。需達到最低購買數量。
+                                                    分期付款僅適用於購買單一商品。如果你對於購買多件商品有任何疑問，請撥打 0800-020-000 洽詢專員。
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item bg-transparent border-bottom">
+                                            <h2 class="accordion-header" id="flush-headingThree">
+                                                <button class="accordion-button px-0 collapsed shadow-none text-decoration-none"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                                    aria-controls="flush-collapseThree">
+                                                    我何時能收到發票？
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                                aria-labelledby="flush-headingThree"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body px-0 fw-lighter">
+                                                    電子發票會在產品出貨當天核發。根據各個發票選項，你收到發票的時間將有所不同。
+                                                    <ul>
+                                                        <li>非營業人電子發票：產品出貨後 7 至 10 個工作天。</li>
+                                                        <li>營業人電子發票：產品出貨後，發票將會以電子郵件的方式寄送至您指定的電子信箱。</li>
+                                                        <li>雲端發票 - 共通性載具：發票將會在產品出貨後 48 小時內傳送至財政部。屆時，您可透過載具帳戶查詢發票。</li>
+                                                        <li>雲端發票 - 捐贈：發票將會在產品出貨後 48 小時內傳送至財政部。屆時，發票將捐贈給您所選擇的受捐贈機關或團體。
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4 mb-lg-0">
+                    <p>
+                        使用業界標準加密技術來保護你的個人資訊機密。
+                        我們會透過你的網際網路 IP 位址所對應的地理區域，或你上次瀏覽網站輸入的位置資訊，估計你的約略位置。
+                    </p>
+                </div>
+                <div class="col-auto">
+                    <p class="mb-0">
+                        更多選購方式：尋找<a href="#" class="link-underline">當地的直營店</a>或<a href="#"
+                            class="link-underline">其他零售商</a>，或致電
+                        0800-000-000。
+                    </p>
+                </div>
+                <div class="col-auto">
+                    <ul class="list-unstyled mb-0 row list-unstyled">
                         <li class="col"><a href="#"><i class="bi bi-facebook"></i></a></li>
                         <li class="col"><a href="#"><i class="bi bi-instagram"></i></a></li>
                         <li class="col"><a href="#"><i class="bi bi-twitter"></i></a></li>
@@ -291,15 +505,16 @@
                     </ul>
                 </div>
             </div>
-            <div class="row mt-lg-2 border-top pt-2 justify-content-between">
-                <div style="font-size: 12px;">
-                    更多選購方式：尋找<a href="#" class="link-underline">當地的直營店</a>或<a href="#"
-                        class="link-underline">其他零售商</a>，或致電
-                    0800-000-000。
+            <div class="justify-content-center justify-content-lg-between mt-4 mt-lg-2 pt-2 row border-top">
+                <div class="col-auto">
+                    <p class="mb-0">
+                        Copyright © 2022 FISH Site by <a href="https://github.com/vvayHuang"
+                            class="link-underline">wayHuang</a>
+                    </p>
                 </div>
-                <div class="col-auto">Copyright © 2022 FISH Site by <a href="https://github.com/vvayHuang"
-                        class="link-underline">wayHuang</a></div>
-                <div class="col-auto">台灣</div>
+                <div class="col-auto">
+                    <p class="mb-0">台灣</p>
+                </div>
             </div>
         </div>
     </footer>

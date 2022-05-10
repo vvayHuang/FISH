@@ -1,0 +1,23 @@
+.shop-card{
+    transition-duration: .3s;
+    width: 333px;
+    height: 315px;
+    @media (max-width:768px) {
+        width: 232px;
+    }
+    .card-img-overlay{
+        transition-duration: .3s;
+    }
+}
+.shop-card:hover{
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.8) ;
+    .card-img-overlay{
+        transform: scale3d(1.01,1.01,1.01);
+    }
+}
+.information-card{
+    max-width: 500px;
+    @media (max-width:768px) {
+        max-width: 232px;
+    }
+}

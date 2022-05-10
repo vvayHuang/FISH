@@ -6,10 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./stylesheet/asset/logo/SVG/logo-icon.svg" type="icon" rel="shortcut icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&family=Oswald:wght@400;700&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="stylesheet/css/all.css">
     <title>購物車 - FISH</title>
@@ -17,8 +13,7 @@
 
 <body class="bg-primary">
     <!-- 導覽列 -->
-    <nav class="navbar navbar-expand-lg bg-primary py-2 bg-opacity-75"
-        style="backdrop-filter: blur(5px);">
+    <nav class="navbar navbar-expand-lg bg-primary py-2 bg-opacity-75" style="backdrop-filter: blur(5px);">
         <div class="container d-lg-block">
             <!-- 漢堡選單 -->
             <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
@@ -72,156 +67,514 @@
     <!-- 內容 -->
     <section class="py-4">
         <div class="container">
-            <h2 class="text-center fs-3 bg-primary-light py-2">以下是您購物車內的商品</h2>
-            <div class="row row-cols-1 row-cols-lg-1 justify-content-center">
-                <!-- 上欄 -->
-                <div class="col-lg-8">
-                    <div class="row row-cols-1 mt-4 g-4">
-                        <!-- 購物車項目 -->
+            <h2 class="text-center fs-lg-3 fs-6 bg-primary-light py-2">以下是您購物車內的商品</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="gy-4 justify-content-end row row-cols-1">
+                        <!-- 日光燈魚 -->
                         <div class="col">
-                            <div class="row align-items-center justify-content-lg-between justify-content-end border-bottom py-2 py-lg-4 mb-4 gy-3">
-                                <div class="col d-flex">
-                                    <div class="col-auto me-4 position-relative">
-                                        <a href="fish-light.html">
-                                            <div
-                                                style="background-image: url(https://images.unsplash.com/photo-1554768904-9f6dea726200?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=861&q=80); background-size: cover; background-position: center;" class="cart-photo-size">
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col d-md-flex align-items-center justify-content-between">
-                                        <div class="fw-light mb-3 mb-md-0 me-4">
-                                            <h3 class="fs-4 mb-0 text-nowrap">日光燈魚</h3>
-                                            <i>NT$1450</i>
-                                        </div>
-                                        <div class="input-group input-group-sm mb-0 w-auto">
-                                            <button class="btn btn-outline-secondary shadow-none" type="button">
-                                                <i class="bi bi-dash fs-5"></i>
-                                            </button>
-                                            <input type="text" class="form-control text-secondary text-center shadow-none bg-primary btn-outline-secondary" value="1" aria-label="Example text with two button addons">
-                                            <button class="btn btn-outline-secondary shadow-none" type="button">
-                                                <i class="bi bi-plus fs-5"></i>
-                                            </button>
-                                          </div>
-                                        
+                            <div class="border-bottom py-4 row row-cols-1 gy-2">
+                                <div class="col col-lg-3 position-relative">
+                                    <div style="background-image: url(https://images.unsplash.com/photo-1554768904-9f6dea726200?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=861&q=80); background-size: cover; background-position: center;"
+                                        class="cart-photo-size">
                                     </div>
                                 </div>
-                                <div class="col-auto text-end">
-                                    <span class="fs-3 text-nowrap me-lg-4">NT$ 1450</span>
-                                    <a href="#" class="d-none d-lg-inline-block">
-                                        <i class="bi bi-trash fs-3"></i>
-                                    </a>
+                                <div class="col col-lg-9">
+                                    <div class="row row-cols-lg-3 align-items-start">
+                                        <div class="col-5">
+                                            <a href="fish-light.html" class="text-decoration-none">
+                                                <h3 class="fs-4 mb-0 lh-base">日光燈魚</h3>
+                                            </a>
+                                            <div class="d-lg-block d-none accordion accordion-flush"
+                                                id="accordionFlushOne">
+                                                <div class="accordion-item bg-transparent">
+                                                    <h2 class="accordion-header" id="flush-headingOne">
+                                                        <button class="accordion-button collapsed px-0" type="button"
+                                                            data-bs-toggle="collapse" data-bs-target="#item1"
+                                                            aria-expanded="false" aria-controls="item1">
+                                                            顯示詳細資訊
+                                                        </button>
+                                                    </h2>
+                                                    <div id="item1" class="accordion-collapse collapse"
+                                                        aria-labelledby="flush-headingOne"
+                                                        data-bs-parent="#accordionFlushOne">
+                                                        <div class="accordion-body px-0">
+                                                            霓虹脂鯉，中文俗名日光燈魚、紅綠燈魚，為輻鰭魚綱脂鯉目脂鯉科的其中一個種，是一種小型熱帶魚。</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <select class="form-select w-auto border-0 bg-transparent fs-4 mx-auto py-0"
+                                                aria-label="Default select example">
+                                                <option value="1" selected>1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                            </select>
+                                        </div>
+                                        <div class="col text-end">
+                                            <span class="fs-4 d-block text-nowrap">NT$ 1,450</span>
+                                            <button class="btn px-0 py-3 fs-6 d-none d-lg-inline-block">
+                                                刪除
+                                            </button>
+                                        </div>
+                                        <!-- 手機版顯示詳細資訊 -->
+                                        <div class="col d-lg-none d-block">
+                                            <div class="row row-cols-2">
+                                                <div class="col">
+                                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                                        <div class="accordion-item bg-transparent">
+                                                            <h2 class="accordion-header" id="flush-headingOne">
+                                                                <button class="accordion-button collapsed px-0"
+                                                                    type="button" data-bs-toggle="collapse"
+                                                                    data-bs-target="#item1" aria-expanded="false"
+                                                                    aria-controls="item1">
+                                                                    顯示詳細資訊
+                                                                </button>
+                                                            </h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <button class="btn px-0 py-3 fs-6 d-block ms-auto">
+                                                        刪除
+                                                    </button>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div id="item1" class="accordion-collapse collapse"
+                                                        aria-labelledby="flush-headingOne"
+                                                        data-bs-parent="#accordionFlushExample">
+                                                        <div class="accordion-body px-0">
+                                                            霓虹脂鯉，中文俗名日光燈魚、紅綠燈魚，為輻鰭魚綱脂鯉目脂鯉科的其中一個種，是一種小型熱帶魚。</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="border-top gy-4 mt-4 gy-lg-0 mt-lg-0 pt-lg-4 row row-cols-1 row-cols-lg-2">
+                                        <div class="col">
+                                            <i class="bi bi-bag-heart me-2"></i>
+                                            <div>
+                                                <span>立即訂購。店內取貨：<br><strong>今天</strong>，地點：<a href="#"
+                                                        class="link-underline">樂華夜市</a></span>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <i class="bi bi-box-seam me-2"></i>
+                                            <div>
+                                                <span>下午 3 前訂購。 運送至<a href="#" class="link-underline">永和</a><br>
+                                                    <strong>明天 —
+                                                        免額外付費</strong></span>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- 紅蓮燈魚 -->
                         <div class="col">
-                            <div class="row align-items-center justify-content-lg-between justify-content-end border-bottom py-2 py-lg-4 mb-4 gy-3">
-                                <div class="col d-flex">
-                                    <div class="col-auto me-4 position-relative">
-                                        <a href="fish-light.html">
-                                            <div
-                                                style="background-image: url(https://images.unsplash.com/photo-1522069169874-c58ec4b76be5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=412&q=80); background-size: cover; background-position: center;" class="cart-photo-size">
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col d-md-flex align-items-center justify-content-between">
-                                        <div class="fw-light mb-3 mb-md-0 me-4">
-                                            <h3 class="fs-4 mb-0 text-nowrap">紅蓮燈魚</h3>
-                                            <i>NT$450</i>
-                                        </div>
-                                        <div class="input-group input-group-sm mb-0 w-auto">
-                                            <button class="btn btn-outline-secondary shadow-none" type="button">
-                                                <i class="bi bi-dash fs-5"></i>
-                                            </button>
-                                            <input type="text" class="form-control text-secondary text-center shadow-none bg-primary btn-outline-secondary" value="1" aria-label="Example text with two button addons">
-                                            <button class="btn btn-outline-secondary shadow-none" type="button">
-                                                <i class="bi bi-plus fs-5"></i>
-                                            </button>
-                                          </div>
-                                        
+                            <div class="border-bottom py-4 row row-cols-1 gy-2">
+                                <div class="col col-lg-3 position-relative">
+                                    <div style="background-image: url(https://images.unsplash.com/photo-1522069169874-c58ec4b76be5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=412&q=80); background-size: cover; background-position: center;"
+                                        class="cart-photo-size">
                                     </div>
                                 </div>
-                                <div class="col-auto text-end">
-                                    <span class="fs-3 text-nowrap me-lg-4">NT$ 450</span>
-                                    <a href="#" class="d-none d-lg-inline-block">
-                                        <i class="bi bi-trash fs-3"></i>
-                                    </a>
+                                <div class="col col-lg-9">
+                                    <div class="row row-cols-lg-3 align-items-start">
+                                        <div class="col-5">
+                                            <a href="fish-light.html" class="text-decoration-none">
+                                                <h3 class="fs-4 mb-0 lh-base">紅蓮燈魚</h3>
+                                            </a>
+                                            <div class="d-lg-block d-none accordion accordion-flush"
+                                                id="accordionFlushTwo">
+                                                <div class="accordion-item bg-transparent">
+                                                    <h2 class="accordion-header" id="flush-headingTwo">
+                                                        <button class="accordion-button collapsed px-0" type="button"
+                                                            data-bs-toggle="collapse" data-bs-target="#item2"
+                                                            aria-expanded="false" aria-controls="item2">
+                                                            顯示詳細資訊
+                                                        </button>
+                                                    </h2>
+                                                    <div id="item2" class="accordion-collapse collapse"
+                                                        aria-labelledby="flush-headingTwo"
+                                                        data-bs-parent="#accordionFlushTwo">
+                                                        <div class="accordion-body px-0">
+                                                            體型嬌小，全長3～4厘米，鰭也不大。體色突出在側線上方有一條霓虹縱帶，從眼部直至尾柄前，在光線折射下既綠又藍，尾柄處鮮紅色，游動時紅綠閃爍。</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <select class="form-select w-auto border-0 bg-transparent fs-4 mx-auto py-0"
+                                                aria-label="Default select example">
+                                                <option value="1" selected>1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                            </select>
+                                        </div>
+                                        <div class="col text-end">
+                                            <span class="fs-4 d-block text-nowrap">NT$ 450</span>
+                                            <button class="btn px-0 py-3 fs-6 d-none d-lg-inline-block">
+                                                刪除
+                                            </button>
+                                        </div>
+                                        <!-- 手機版顯示詳細資訊 -->
+                                        <div class="col d-lg-none d-block">
+                                            <div class="row row-cols-2">
+                                                <div class="col">
+                                                    <div class="accordion accordion-flush" id="accordionFlushTwo">
+                                                        <div class="accordion-item bg-transparent">
+                                                            <h2 class="accordion-header" id="flush-headingTwo">
+                                                                <button class="accordion-button collapsed px-0"
+                                                                    type="button" data-bs-toggle="collapse"
+                                                                    data-bs-target="#item2" aria-expanded="false"
+                                                                    aria-controls="item2">
+                                                                    顯示詳細資訊
+                                                                </button>
+                                                            </h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <button class="btn px-0 py-3 fs-6 d-block ms-auto">
+                                                        刪除
+                                                    </button>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div id="item2" class="accordion-collapse collapse"
+                                                        aria-labelledby="flush-headingTwo"
+                                                        data-bs-parent="#accordionFlushTwo">
+                                                        <div class="accordion-body px-0">
+                                                            體型嬌小，全長3～4厘米，鰭也不大。體色突出在側線上方有一條霓虹縱帶，從眼部直至尾柄前，在光線折射下既綠又藍，尾柄處鮮紅色，游動時紅綠閃爍。</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="border-top gy-4 mt-4 gy-lg-0 mt-lg-0 pt-lg-4 row row-cols-1 row-cols-lg-2">
+                                        <div class="col">
+                                            <i class="bi bi-bag-heart me-2"></i>
+                                            <div>
+                                                <span>立即訂購。店內取貨：<br><strong>今天</strong>，地點：<a href="#"
+                                                        class="link-underline">樂華夜市</a></span>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <i class="bi bi-box-seam me-2"></i>
+                                            <div>
+                                                <span>下午 3 前訂購。 運送至<a href="#" class="link-underline">永和</a><br>
+                                                    <strong>明天 —
+                                                        免額外付費</strong></span>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- 神仙魚 -->
                         <div class="col">
-                            <div class="row align-items-center justify-content-lg-between justify-content-end border-bottom py-2 py-lg-4 mb-4 gy-3">
-                                <div class="col d-flex">
-                                    <div class="col-auto me-4 position-relative">
-                                        <a href="fish-light.html">
-                                            <div
-                                                style="background-image: url(https://images.unsplash.com/photo-1538719501547-bc023056a8b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=396&q=80); background-size: cover; background-position: center;" class="cart-photo-size">
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col d-md-flex align-items-center justify-content-between">
-                                        <div class="fw-light mb-3 mb-md-0 me-4">
-                                            <h3 class="fs-4 mb-0 text-nowrap">神仙魚</h3>
-                                            <i>NT$990</i>
-                                        </div>
-                                        <div class="input-group input-group-sm mb-0 w-auto">
-                                            <button class="btn btn-outline-secondary shadow-none" type="button">
-                                                <i class="bi bi-dash fs-5"></i>
-                                            </button>
-                                            <input type="text" class="form-control text-secondary text-center shadow-none bg-primary btn-outline-secondary" value="1" aria-label="Example text with two button addons">
-                                            <button class="btn btn-outline-secondary shadow-none" type="button">
-                                                <i class="bi bi-plus fs-5"></i>
-                                            </button>
-                                          </div>
-                                        
+                            <div class="border-bottom py-4 row row-cols-1 gy-2">
+                                <div class="col col-lg-3 position-relative">
+                                    <div style="background-image: url(https://images.unsplash.com/photo-1538719501547-bc023056a8b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=396&q=80); background-size: cover; background-position: center;"
+                                        class="cart-photo-size">
                                     </div>
                                 </div>
-                                <div class="col-auto text-end">
-                                    <span class="fs-3 text-nowrap me-lg-4">NT$ 990</span>
-                                    <a href="#" class="d-none d-lg-inline-block">
-                                        <i class="bi bi-trash fs-3"></i>
-                                    </a>
+                                <div class="col col-lg-9">
+                                    <div class="row row-cols-lg-3 align-items-start">
+                                        <div class="col-5">
+                                            <a href="fish-light.html" class="text-decoration-none">
+                                                <h3 class="fs-4 mb-0 lh-base">神仙魚</h3>
+                                            </a>
+                                            <div class="d-lg-block d-none accordion accordion-flush"
+                                                id="accordionFlushExample">
+                                                <div class="accordion-item bg-transparent">
+                                                    <h2 class="accordion-header" id="flush-headingThree">
+                                                        <button class="accordion-button collapsed px-0" type="button"
+                                                            data-bs-toggle="collapse" data-bs-target="#item3"
+                                                            aria-expanded="false" aria-controls="item3">
+                                                            顯示詳細資訊
+                                                        </button>
+                                                    </h2>
+                                                    <div id="item3" class="accordion-collapse collapse"
+                                                        aria-labelledby="flush-headingThree"
+                                                        data-bs-parent="#accordionFlushExample">
+                                                        <div class="accordion-body px-0">
+                                                            體形較大的熱帶魚，原產於南美洲亞馬遜河，體形側扁，高可達15厘米，適合在河中水流平穩的樹根縫隙中生活，以動物性水蟲為食料。水溫應保持26℃，繁殖水溫應達27-28℃，受精卵排放附著在水草葉或山石上，雌雄魚共同護理照料，但卵孵出後，大魚容易吞食小魚，也不適合和其他小魚混養。</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <select class="form-select w-auto border-0 bg-transparent fs-4 mx-auto py-0"
+                                                aria-label="Default select example">
+                                                <option value="1" selected>1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                            </select>
+                                        </div>
+                                        <div class="col text-end">
+                                            <span class="fs-4 d-block text-nowrap">NT$ 990</span>
+                                            <button class="btn px-0 py-3 fs-6 d-none d-lg-inline-block">
+                                                刪除
+                                            </button>
+                                        </div>
+                                        <!-- 手機版顯示詳細資訊 -->
+                                        <div class="col d-lg-none d-block">
+                                            <div class="row row-cols-2">
+                                                <div class="col">
+                                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                                        <div class="accordion-item bg-transparent">
+                                                            <h2 class="accordion-header" id="flush-headingThree">
+                                                                <button class="accordion-button collapsed px-0"
+                                                                    type="button" data-bs-toggle="collapse"
+                                                                    data-bs-target="#item3" aria-expanded="false"
+                                                                    aria-controls="item3">
+                                                                    顯示詳細資訊
+                                                                </button>
+                                                            </h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <button class="btn px-0 py-3 fs-6 d-block ms-auto">
+                                                        刪除
+                                                    </button>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div id="item3" class="accordion-collapse collapse"
+                                                        aria-labelledby="flush-headingThree"
+                                                        data-bs-parent="#accordionFlushExample">
+                                                        <div class="accordion-body px-0">
+                                                            體形較大的熱帶魚，原產於南美洲亞馬遜河，體形側扁，高可達15厘米，適合在河中水流平穩的樹根縫隙中生活，以動物性水蟲為食料。水溫應保持26℃，繁殖水溫應達27-28℃，受精卵排放附著在水草葉或山石上，雌雄魚共同護理照料，但卵孵出後，大魚容易吞食小魚，也不適合和其他小魚混養。</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="border-top gy-4 mt-4 gy-lg-0 mt-lg-0 pt-lg-4 row row-cols-1 row-cols-lg-2">
+                                        <div class="col">
+                                            <i class="bi bi-bag-heart me-2"></i>
+                                            <div>
+                                                <span>立即訂購。店內取貨：<br><strong>今天</strong>，地點：<a href="#"
+                                                        class="link-underline">樂華夜市</a></span>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <i class="bi bi-box-seam me-2"></i>
+                                            <div>
+                                                <span>下午 3 前訂購。 運送至<a href="#" class="link-underline">永和</a><br>
+                                                    <strong>明天 —
+                                                        免額外付費</strong></span>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- 下欄 -->
+                        <div class="col col-lg-6">
+                            <div class="d-flex justify-content-between fs-5">
+                                <p class="d-inline-block">小計</p>
+                                <p class="d-inline-block">NT$ 2,890</p>
+                            </div>
+                            <div class="d-flex justify-content-between fs-5">
+                                <p class="d-inline-block">運費</p>
+                                <p class="d-inline-block">NT$ 200</p>
+                            </div>
+                            <div class="border-bottom d-flex fs-3 fw-bold justify-content-between mb-4">
+                                <p class="d-inline-block">您的總金額</p>
+                                <p class="d-inline-block">NT$ 3,090</p>
+                            </div>
+                            <button type="submit" class="btn btn-secondary w-100 rounded-4 position-relative">
+                                <a class="text-decoration-none stretched-link text-primary" href="deliver.html"
+                                    .html">結帳</a>
+                            </button>
+                        </div>
                     </div>
-                </div>
-                <!-- 下欄 -->
-                <div class="col-lg-6 ms-auto">
-                    <div class="d-flex justify-content-between fs-5">
-                        <p class="d-inline-block">小計</p>
-                        <p class="d-inline-block">NT$ 2,890</p>
-                    </div>
-                    <div class="d-flex justify-content-between fs-5">
-                        <p class="d-inline-block">運費</p>
-                        <p class="d-inline-block">免額外付費</p>
-                    </div>
-                    <div class="border-bottom d-flex fs-3 fw-bold justify-content-between mb-4">
-                        <p class="d-inline-block">您的總金額</p>
-                        <p class="d-inline-block">NT$ 2,890</p>
-                    </div>
-                    <button type="submit" class="btn btn-secondary w-75 rounded-pill d-block ms-auto position-relative">
-                        <a class="text-decoration-none text-warning stretched-link" href="deliver.html".html">結帳</a>
-                    </button>
                 </div>
             </div>
         </div>
     </section>
     <!-- 頁尾 -->
-    <footer class="py-4" style="background: linear-gradient(#3a0ca3,#300660);">
-        <div class="container border-top py-4 py-lg-0">
-            <div class="row justify-content-end align-items-center gy-3 mt-lg-2">
-                <div class="col-lg-3 mb-4 mb-lg-0">
-                    <div class="d-flex flex-column align-items-center align-items-lg-end">
-                        <img class="ms-lg-auto mb-4" src="stylesheet/asset/logo/SVG/logo.svg" width="80" alt="FISH">
-                        <p class="text-lg-end text-center mb-0">
-                            電話：<a href="tel:02-18703030" class="link-underline">02-18703030</a>
-                            <br>
-                            信箱：<a href="mailto:123@gmail.com" class="link-underline">md46343113@msn.com
-                            </a>
+    <footer class="py-4" style="background: linear-gradient(#3a0ca3,#300660); font-size: 12px;">
+        <!-- 需要進一步協助 -->
+        <div class="border-bottom border-top">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <p class="mb-0 py-4">
+                            需要進一步協助？立即<a href="#" class="link-underline">與我們交流</a>或致電 <a href="tel:0800-020-000"
+                                class="link-underline">0800-020-000</a>。
                         </p>
                     </div>
-                    <ul
-                        class="g-2 justify-content-lg-end justify-content-center list-unstyled mb-0 row row-cols-auto flex-lg-nowrap">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="gy-4 justify-content-evenly justify-content-lg-between row row-cols-1">
+                <!-- 常見問題 -->
+                <div class="col">
+                    <div class="accordion accordion-flush" id="q-a">
+                        <div class="accordion-item bg-transparent">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button px-0 collapsed fs-4 px-lg-0 shadow-none" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-qa" aria-expanded="false"
+                                    aria-controls="flush-qa">
+                                    送貨取貨常見問題
+                                </button>
+                            </h2>
+                            <!-- 常見問題內容 -->
+                            <div id="flush-qa" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                                data-bs-parent="#q-a">
+                                <div class="accordion-body px-0">
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <div class="accordion-item bg-transparent border-bottom">
+                                            <h2 class="accordion-header" id="flush-headingOne">
+                                                <button class="accordion-button px-0 collapsed shadow-none text-decoration-none"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                                    aria-controls="flush-collapseOne">
+                                                    什麼時候能收到我的商品？
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                                aria-labelledby="flush-headingOne"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body px-0 fw-lighter">
+                                                    輸入郵遞區號，即可查看預計送達和取貨日期。下達訂單後，你將會看見最終預估日期。所有的預估時間皆根據商品供貨狀況以及你所選擇的送貨選項而定。
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item bg-transparent border-bottom">
+                                            <h2 class="accordion-header" id="flush-headingTwo">
+                                                <button class="accordion-button px-0 collapsed shadow-none text-decoration-none"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                                    aria-controls="flush-collapseTwo">
+                                                    送貨費用是多少？
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                                aria-labelledby="flush-headingTwo"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body px-0 fw-lighter">
+                                                    運費 200
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item bg-transparent border-bottom">
+                                            <h2 class="accordion-header" id="flush-headingThree">
+                                                <button class="accordion-button px-0 collapsed shadow-none text-decoration-none"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                                    aria-controls="flush-collapseThree">
+                                                    可以送貨到我家以外的地方嗎？
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                                aria-labelledby="flush-headingThree"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body px-0 fw-lighter">
+                                                    可以。你可以在結帳出現提示時輸入你選擇的地址。<a href="#" class="link-underline">進一步了解
+                                                        送貨與取貨</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item bg-transparent border-bottom">
+                                            <h2 class="accordion-header" id="flush-headingFour">
+                                                <button class="accordion-button px-0 collapsed shadow-none text-decoration-none"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                                    aria-controls="flush-collapseFour">
+                                                    如果我選擇其中一種修訂過的取貨方式，需要注意哪些事項？
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                                aria-labelledby="flush-headingFour"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body px-0 fw-lighter">
+                                                    你所選擇的直營店，將會提供以下其中一種修訂過的取貨方式：店內取貨、路邊取貨，或是快捷取貨。當你的訂單已備妥時，我們會寄送一封附有詳細取貨步驟說明的電子郵件，其中包括在你抵達時如何開始進行取貨。我們也會讓你知道你所選擇的直營店在進行取貨時是否需要量測體溫及戴上口罩。你可以透過尋找<a
+                                                        href="#" class="link-underline">直營店</a>，了解當地直營店的最新資訊
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item bg-transparent border-bottom">
+                                            <h2 class="accordion-header" id="flush-headingFive">
+                                                <button class="accordion-button px-0 collapsed shadow-none text-decoration-none"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                                    aria-controls="flush-collapseFive">
+                                                    我何時能收到文字通知？
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseFive" class="accordion-collapse collapse"
+                                                aria-labelledby="flush-headingFive"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body px-0 fw-lighter">
+                                                    結帳時輸入你的行動電話號碼，即可在商品配送或出現問題時接收簡訊通知。簡訊僅會在早上 8 點至晚上 9
+                                                    點間傳送。若要停止接收簡訊，只要以簡訊回覆「STOP」即可。
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item bg-transparent border-bottom">
+                                            <h2 class="accordion-header" id="flush-headingSix">
+                                                <button class="accordion-button px-0 collapsed shadow-none text-decoration-none"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#flush-collapseSix" aria-expanded="false"
+                                                    aria-controls="flush-collapseSix">
+                                                    我不在現場收貨怎麼辦？
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseSix" class="accordion-collapse collapse"
+                                                aria-labelledby="flush-headingSix"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body px-0 fw-lighter">
+                                                    確認訂單配送的電子郵件，將會載明是否需要在送達時簽收。如果你不在收貨現場，貨運業者將會留下名片，而我們將以電子郵件通知你。你可以直接聯絡貨運業者以排定新的送貨時間，或是提供不同的地址。
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4 mb-lg-0">
+                    <p>
+                        使用業界標準加密技術來保護你的個人資訊機密。
+                        我們會透過你的網際網路 IP 位址所對應的地理區域，或你上次瀏覽網站輸入的位置資訊，估計你的約略位置。
+                    </p>
+                </div>
+                <div class="col-auto">
+                    <p class="mb-0">
+                        更多選購方式：尋找<a href="#" class="link-underline">當地的直營店</a>或<a href="#"
+                            class="link-underline">其他零售商</a>，或致電
+                        0800-000-000。
+                    </p>
+                </div>
+                <div class="col-auto">
+                    <ul class="list-unstyled mb-0 row list-unstyled">
                         <li class="col"><a href="#"><i class="bi bi-facebook"></i></a></li>
                         <li class="col"><a href="#"><i class="bi bi-instagram"></i></a></li>
                         <li class="col"><a href="#"><i class="bi bi-twitter"></i></a></li>
@@ -229,15 +582,16 @@
                     </ul>
                 </div>
             </div>
-            <div class="row mt-lg-2 border-top pt-2 justify-content-between">
-                <div style="font-size: 12px;">
-                    更多選購方式：尋找<a href="#" class="link-underline">當地的直營店</a>或<a href="#"
-                        class="link-underline">其他零售商</a>，或致電
-                    0800-000-000。
+            <div class="justify-content-center justify-content-lg-between mt-4 mt-lg-2 pt-2 row border-top">
+                <div class="col-auto">
+                    <p class="mb-0">
+                        Copyright © 2022 FISH Site by <a href="https://github.com/vvayHuang"
+                            class="link-underline">wayHuang</a>
+                    </p>
                 </div>
-                <div class="col-auto">Copyright © 2022 FISH Site by <a href="https://github.com/vvayHuang"
-                        class="link-underline">wayHuang</a></div>
-                <div class="col-auto">台灣</div>
+                <div class="col-auto">
+                    <p class="mb-0">台灣</p>
+                </div>
             </div>
         </div>
     </footer>

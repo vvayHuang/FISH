@@ -1,6 +1,12 @@
 .promo-img{
     height: 400px;
-    @media (min-width:376px) {
-        height: 624px;
+    @media (max-width:376px) {
+        height: 300px;
+    }
+}
+.cart-photo-size{
+    height: 248px;
+    @media (min-width:960px) {
+        height: 210px;
     }
 }

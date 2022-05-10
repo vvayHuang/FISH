@@ -1,11 +1,12 @@
 .banner-color-bg{
     display: block;
-    height: 75px;
+    height: 78px;
 }
 .banner-title{
+    font-size: 16px;
     color: $secondary;
     background-color: $primary;
-    transition: ease .5s;
+    transition: ease-in .3s;
     backdrop-filter: blur(5px);
     opacity: .8;
     &:hover{
