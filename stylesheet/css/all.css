@@ -4732,7 +4732,6 @@ fieldset:disabled .btn {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  font-size: 0.75rem;
   color: #ffb1d2;
   text-decoration: none;
   -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
@@ -15961,13 +15960,14 @@ fieldset:disabled .btn {
 .hero-content {
   position: absolute;
   width: 100%;
-  height: 100%;
-  top: 50%;
+  top: 100%;
   left: 50%;
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
   padding: 1rem;
+  -webkit-transform: translate(-50%, -100%);
+          transform: translate(-50%, -100%);
 }
 
 .hero-content .hero-title {
